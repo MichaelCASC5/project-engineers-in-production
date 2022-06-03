@@ -18,102 +18,22 @@
     <link rel='icon' href='./static/img/favicon.ico' type='image/x-icon' />
     <title>{{ title }}</title>
 </head>
-
-<body>
     <header class="nav-bar">
         <div class="nav-content">
             <a href="/">
                 <div class="nav-logo">
-                    <img src="./static/img/logo.svg" />
+                    <img src="{{images['logo']}}"/>
                 </div>
             </a>
+            <div class="nav-links">
+                <ul>
+                    <li> <a href="/work"> Work & Education </a> </li>
+                    <li> <a href="/work"> Hobbies </a> </li>
+                </ul>
+            </div>
         </div>
     </header>
-
-    <div class="large-banner">
-        <h1>John Doe the Great</h1>
-    </div>
-
-    <div class="center-title">
-        <h1 class="large-title">Inspirational Text</h1>
-        <div class="text">
-            <p>A short phrase to give a general idea of what this page, and what this fellow is about.</p>
-        </div>
-    </div>
-
-    <div class="gridrow">
-        <div class="column-center">
-            <!-- <div class="small-title">
-                smol
-            </div> -->
-            <div class="title">ABOUT PABLO</div>
-            <div class="text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Ut suscipit condimentum mollis.
-                    Aenean luctus egestas nisi, et imperdiet lorem consectetur sed.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Ut suscipit condimentum mollis.
-                    Aenean luctus egestas nisi, et imperdiet lorem consectetur sed.
-                </p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Ut suscipit condimentum mollis.
-                    Aenean luctus egestas nisi, et imperdiet lorem consectetur sed.
-                </p>
-            </div>
-        </div>
-
-        <div class="profile">
-            <div id="profile-picture" class="profile-picture">
-                <img src="./static/img/logo.jpg">
-            </div>
-            <!-- <h1>{{ title }}</h1> -->
-        </div>
-    </div>
-
-    <div class="gridrow">
-        <div class="profile">
-            <div id="profile-picture" class="profile-picture">
-                <img src="./static/img/michael.jpg">
-            </div>
-            <!-- <h1>{{ title }}</h1> -->
-        </div>
-        
-        <div class="column-center">
-            <!-- <div class="small-title">
-                smol
-            </div> -->
-            <div class="title">ABOUT MICHAEL</div>
-            <div class="text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Ut suscipit condimentum mollis.
-                    Aenean luctus egestas nisi, et imperdiet lorem consectetur sed.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Ut suscipit condimentum mollis.
-                    Aenean luctus egestas nisi, et imperdiet lorem consectetur sed.
-                </p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Ut suscipit condimentum mollis.
-                    Aenean luctus egestas nisi, et imperdiet lorem consectetur sed.
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <div class="map-banner">
-        <div class="gridrow">
-            <div class="center-title">
-                <h1 class="map-title">My Travels</h1>
-                <div class="text">
-                    <p>A short phrase to give a general idea of what this page, and what this fellow is about.</p>
-                </div>
-            </div>
-            
-            <div class="map-format">
-                <img src="./static/img/map.jpg">
-            </div>
-        </div>
-    </div>
-
+    {% block content %}{% endblock %}
     <div class="footer">
         <p>Footer sample text</p>
     </div>

@@ -34,8 +34,9 @@ body {
 }
 
 .nav-bar {
+    display: flex;
+    justify-content: space-between;
     width: 100%;
-    display: inline-block;
     /* background-color: #1C539F; */
     background-color: #133667;
     font-family: "Roboto", serif;
@@ -43,10 +44,13 @@ body {
     padding-top: 10px;
 }
 
-.nav-content .logo-touch-target {
-    display: inline-flex;
-    height: 60%;
-    width: 350px;
+.nav-content{
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-content{
+    width: 100%;
 }
 
 .nav-content .nav-logo {
@@ -70,6 +74,20 @@ body {
     text-align: right;
     padding-top: 0px;
     padding-right: 0px;
+}
+
+.nav-links{
+    text-decoration: none;
+    font-family: "Roboto", serif;
+    font-size: 1rem;
+    font-weight: 700 !important;
+    list-style-type: none;
+    color: whitesmoke;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: inherit;
 }
 
 .large-banner {
