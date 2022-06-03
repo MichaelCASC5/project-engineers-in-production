@@ -1,0 +1,47 @@
+{% extends "index.html" %}
+{% block content %}
+    <div class="large-banner">
+        <h1>{{data['Name']}}</h1>
+    </div>
+
+    <div class="center-title">
+        <h1 class="large-title">{{data['Quote']}}</h1>
+        <div class="text">
+            <p>{{data['Pitch']}}</p>
+        </div>
+    </div>
+
+    <div class="gridrow">
+        <div class="profile">
+            <div id="profile-picture" class="profile-picture">
+                <img src="{{images['profilePic']}}"/>
+            </div>
+            <!-- <h1>{{ title }}</h1> -->
+        </div>
+        
+        <div class="column-center">
+            <!-- <div class="small-title">
+                smol
+            </div> -->
+            <div class="title">ABOUT ME</div>
+            <div class="text">
+                <p>{{data['Description']}}</p>
+            </div>content
+        </div>
+    </div>
+
+    <div class="map-banner">
+        <div class="gridrow">
+            <div class="center-title">
+                <h1 class="map-title">My Travels</h1>
+                <div class="text">
+                    <p>A short phrase to give a general idea of what this page, and what this fellow is about.</p>
+                </div>
+            </div>
+            
+            <div class="map-format">
+                <img src="./static/img/map.jpg">
+            </div>
+        </div>
+    </div>
+{% endblock %}

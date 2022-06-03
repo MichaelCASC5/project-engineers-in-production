@@ -34,8 +34,9 @@ body {
 }
 
 .nav-bar {
+    display: flex;
+    justify-content: space-between;
     width: 100%;
-    display: inline-block;
     /* background-color: #1C539F; */
     background-color: #133667;
     font-family: "Roboto", serif;
@@ -43,33 +44,36 @@ body {
     padding-top: 10px;
 }
 
-.nav-content .logo-touch-target {
-    display: inline-flex;
-    height: 60%;
-    width: 350px;
-}
-
-.nav-content .nav-logo {
-    height: 60px;
-    margin: auto;
-}
-
 .nav-logo {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-left: 1rem;
 }
 
 .nav-logo img {
     width: 200px;
 }
 
-.nav-content nav {
-    display: block;
-    width: 100%;
-    text-align: right;
-    padding-top: 0px;
-    padding-right: 0px;
+.nav-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    font-size: 1.3rem;
+    color: whitesmoke;
+}
+
+.nav-links li{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: .5rem;
+    list-style-type: none;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: inherit;
 }
 
 .large-banner {
