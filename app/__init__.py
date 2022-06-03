@@ -7,8 +7,12 @@ app = Flask(__name__)
 
 images ={
     "logo": "/static/img/logo.svg",
-    "profilePic" : "/static/img/michael.jpg"
+    "profilePic" : "/static/img/michael.jpg",
+    "hobby1" : "/static/img/hobby1.jpg",
+    "hobby2" : "/static/img/hobby2.jpg",
+    "hobby3" : "/static/img/hobby3.jpg"
 }
+
 @app.route('/')
 def index():
     return render_template(
@@ -29,9 +33,11 @@ def work():
         education = data["Education"]
 
     )
+
 @app.route('/hobbies')
 def hobbies():
     return render_template(
         'Hobbies.html',
-        images = images
+        images = images,
+        data = json.load(open("./app/static/hobbies.json"))
     )

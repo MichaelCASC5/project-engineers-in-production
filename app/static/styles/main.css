@@ -11,16 +11,25 @@ body {
     overflow-x: hidden;
     font-family: "Roboto", serif;
     margin: 0px;
+
+    /* background-image: url("map.jpg"); */
 }
 
 .footer {
-    background-color: #202020;
+    /* background-color: #202020;
     background-size: cover;
     width: auto; 
     overflow-x: hidden;
     font-family: "Roboto", serif;
     margin: 0px;
-    box-shadow: 0 50vh 0 50vh #202020;
+    box-shadow: 0 50vh 0 50vh #202020; */
+    background-color: #202020;
+    color: white;
+
+    text-align: center;
+    /* margin:auto; */
+    column-count: 3;
+    column-gap: 0px;
 }
 
 .gridrow {
@@ -34,14 +43,22 @@ body {
 }
 
 .nav-bar {
-    display: flex;
-    justify-content: space-between;
+    /* ALL THE ORIGINAL CODE FROM PABLO */
+    /* display: flex;
+    justify-content: space-evenly;
     width: 100%;
-    /* background-color: #1C539F; */
     background-color: #133667;
     font-family: "Roboto", serif;
     font-weight: 700 !important;
+    padding-top: 10px; */
+
+    background-color: #133667;
+    font-family: "Roboto", serif;
+    font-weight: 700 !important;
+
     padding-top: 10px;
+    column-count: 3;
+    column-gap: 0px;
 }
 
 .nav-logo {
@@ -77,8 +94,10 @@ body {
 }
 
 .large-banner {
-    /* background: #3b82f6 !important; */
-    background: #1d539f !important;
+    /* background: #1d539f !important; */
+    background-image: url(../img/code_stock_photo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
     height: 10px;
     margin-bottom: 0px;
@@ -87,6 +106,21 @@ body {
 
 .large-banner h1 {
     font-size: 50px;
+    font-weight: 700;
+    color: white;
+}
+
+.narrow-banner {
+    /* background: #3b82f6 !important; */
+    /* background: #1d539f !important; */
+    background-image: url(../img/code_stock_photo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    /* height: 10px; */
+    margin-bottom: 0px;
+    padding: 50px;
+    font-size: 25px;
     font-weight: 700;
     color: white;
 }
@@ -145,7 +179,7 @@ body {
 }
 
 .profile img {
-    border-radius: 25%;
+    border-radius: 10%;
     max-width: 100%;
     max-height: 100%;
     margin-left: auto;
@@ -155,8 +189,8 @@ body {
 }
 
 .profile .profile-picture {
-    /* margin-bottom: 30px; */
     height: 400px;
+    width: 400px;
 }
 
 .banner {
@@ -241,13 +275,21 @@ body {
 .text {
     line-height: 1.2;
     font-size: 15px;
-    /* font-size: 1.875rem; */
     padding-top: 0px;
     margin-bottom: 10px;
-    /* color: #666666; */
     color: #5e5e5e;
     font-weight: 300;
 
     line-height: 1.6em;
-    /* margin: 0 0 30px 0; */
+}
+
+.footer-text {
+    line-height: 1.2;
+    font-size: 15px;
+    padding-top: 0px;
+    margin-bottom: 10px;
+    color: #5e5e5e;
+    font-weight: 300;
+
+    line-height: 1.6em;
 }

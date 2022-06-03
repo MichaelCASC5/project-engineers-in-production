@@ -19,7 +19,13 @@
     <link rel='icon' href='./static/img/favicon.ico' type='image/x-icon' />
     <title>{{ title }}</title>
 </head>
+<body>
+    <!-- NAV BAR -->
     <div class="nav-bar">
+        <div class="nav-links">
+            <li> <a href="/work"> Work & Education </a> </li>
+        </div>
+        
         <div class="nav-logo">
             <a href="/">
                 <img src="{{images['logo']}}"/>
@@ -27,15 +33,23 @@
         </div>
 
         <div class="nav-links">
-            <li> <a href="/work"> Work & Education </a> </li>
             <li> <a href="/hobbies"> Hobbies </a> </li>
         </div>
     </div>
 
     {% block content %}{% endblock %}
 
+    <!-- FOOTER -->
     <div class="footer">
-        <p>Footer sample text</p>
+        <div class="text">
+            {{data['Description']}}
+        </div>
+        <div class="text">
+            {{data['FooterDescription1']}}
+        </div>
+        <div class="text">
+            {{data['FooterDescription3']}}
+        </div>
     </div>
 </body>
 </html>
