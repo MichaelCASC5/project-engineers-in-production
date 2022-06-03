@@ -25,11 +25,17 @@ body {
     box-shadow: 0 50vh 0 50vh #202020; */
     background-color: #202020;
     color: white;
+}
 
-    text-align: center;
-    /* margin:auto; */
+.footer-grid {
+    text-align: left;
+    margin:auto;
     column-count: 3;
-    column-gap: 0px;
+    column-gap: 100px;
+    min-width: 1000px;
+    max-width: 1000px;
+
+    padding: 25px;
 }
 
 .gridrow {
@@ -286,10 +292,10 @@ body {
 .footer-text {
     line-height: 1.2;
     font-size: 15px;
-    padding-top: 0px;
+    padding-top: 10px;
     margin-bottom: 10px;
-    color: #5e5e5e;
-    font-weight: 300;
+    color: #686868;
+    font-weight: 400;
 
     line-height: 1.6em;
 }

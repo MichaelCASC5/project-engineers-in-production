@@ -19,37 +19,42 @@
     <link rel='icon' href='./static/img/favicon.ico' type='image/x-icon' />
     <title>{{ title }}</title>
 </head>
-<body>
-    <!-- NAV BAR -->
-    <div class="nav-bar">
-        <div class="nav-links">
-            <li> <a href="/work"> Work & Education </a> </li>
-        </div>
-        
-        <div class="nav-logo">
-            <a href="/">
-                <img src="{{images['logo']}}"/>
-            </a>
+    <body>
+        <!-- NAV BAR -->
+        <div class="nav-bar">
+            <div class="nav-links">
+                <li> <a href="/work"> Work & Education </a> </li>
+            </div>
+            
+            <div class="nav-logo">
+                <a href="/">
+                    <img src="{{images['logo']}}"/>
+                </a>
+            </div>
+
+            <div class="nav-links">
+                <li> <a href="/hobbies"> Hobbies </a> </li>
+            </div>
         </div>
 
-        <div class="nav-links">
-            <li> <a href="/hobbies"> Hobbies </a> </li>
-        </div>
-    </div>
+        {% block content %}{% endblock %}
 
-    {% block content %}{% endblock %}
-
-    <!-- FOOTER -->
-    <div class="footer">
-        <div class="text">
-            {{data['Description']}}
+        <!-- FOOTER -->
+        <div class="footer">
+            <div class="footer-grid">
+                <div class="footer-text">
+                    <h1>{{footer['Title1']}}</h1>
+                    <p>{{footer['Description1']}}</p>
+                </div>
+                <div class="footer-text">
+                    <h1>{{footer['Title2']}}</h1>
+                    <p>{{footer['Description2']}}</p>
+                </div>
+                <div class="footer-text">
+                    <h1>{{footer['Title3']}}</h1>
+                    <p>{{footer['Description3']}}</p>
+                </div>
+            </div>
         </div>
-        <div class="text">
-            {{data['FooterDescription1']}}
-        </div>
-        <div class="text">
-            {{data['FooterDescription3']}}
-        </div>
-    </div>
-</body>
+    </body>
 </html>

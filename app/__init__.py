@@ -20,6 +20,7 @@ def index():
         title = "MLH Fellow",
         images = images,
         data = json.load(open("./app/static/landingPage.json")),
+        footer = json.load(open("./app/static/footer.json")),
         url = os.getenv("URL")
     )
 
@@ -30,8 +31,8 @@ def work():
         'Work-Education.html',
         images    = images,
         jobs = data["Work experience"],
-        education = data["Education"]
-
+        education = data["Education"],
+        footer = json.load(open("./app/static/footer.json")),
     )
 
 @app.route('/hobbies')
@@ -39,5 +40,6 @@ def hobbies():
     return render_template(
         'Hobbies.html',
         images = images,
-        data = json.load(open("./app/static/hobbies.json"))
+        data = json.load(open("./app/static/hobbies.json")),
+        footer = json.load(open("./app/static/footer.json")),
     )
