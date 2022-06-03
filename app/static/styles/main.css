@@ -44,45 +44,31 @@ body {
     padding-top: 10px;
 }
 
-.nav-content{
-    display: flex;
-    justify-content: space-around;
-}
-
-.nav-content{
-    width: 100%;
-}
-
-.nav-content .nav-logo {
-    height: 60px;
-    margin: auto;
-}
-
 .nav-logo {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-left: 1rem;
 }
 
 .nav-logo img {
     width: 200px;
 }
 
-.nav-content nav {
-    display: block;
-    width: 100%;
-    text-align: right;
-    padding-top: 0px;
-    padding-right: 0px;
+.nav-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    font-size: 1.3rem;
+    color: whitesmoke;
 }
 
-.nav-links{
-    text-decoration: none;
-    font-family: "Roboto", serif;
-    font-size: 1rem;
-    font-weight: 700 !important;
+.nav-links li{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: .5rem;
     list-style-type: none;
-    color: whitesmoke;
 }
 
 .nav-links a{

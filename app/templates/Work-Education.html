@@ -1,5 +1,38 @@
 {% extends "index.html" %}
 {% block content %}
-    <p> Pene </p>
+
+<div class="work">
+    <h1> Work experience </h1>
+    {% for experience in jobs %}
+        <div class="experience">
+                <div class="exp_img">
+                    <img src="{{experience[0]}}"/>
+                </div>
+                <div class="exp_details">
+                    <div class="company"> {{experience[1]}}</div>
+                    <div class="position"> {{experience[2]}}</div>
+                    <div class="description">{{experience[3]}}</div>
+                    <div class="term">{{experience[4]}}</div>
+                </div>
+        </div>
+    {% endfor %}
+</div>
+
+<div class="Education">
+    <h1> Education </h1>
+    {% for experience in education  %}
+        <div class="experience">
+                <div class="exp_img">
+                    <img src="{{experience[0]}}"/>
+                </div>
+                <div class="exp_details">
+                    <div class="company"> {{experience[1]}}</div>
+                    <div class="description">{{experience[2]}}</div>
+                    <div class="term">{{experience[3]}}</div>
+                </div>
+        </div>
+    {% endfor %}
+</div>
+
 {% endblock %}
 

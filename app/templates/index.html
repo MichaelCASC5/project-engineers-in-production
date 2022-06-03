@@ -15,25 +15,25 @@
         rel="stylesheet">
 
     <link lang='sass' rel="stylesheet" href="./static/styles/main.css">
+    <link lang='sass' rel="stylesheet" href="./static/styles/work_education.css">
     <link rel='icon' href='./static/img/favicon.ico' type='image/x-icon' />
     <title>{{ title }}</title>
 </head>
-    <header class="nav-bar">
-        <div class="nav-content">
+    <div class="nav-bar">
+        <div class="nav-logo">
             <a href="/">
-                <div class="nav-logo">
-                    <img src="{{images['logo']}}"/>
-                </div>
+                <img src="{{images['logo']}}"/>
             </a>
-            <div class="nav-links">
-                <ul>
-                    <li> <a href="/work"> Work & Education </a> </li>
-                    <li> <a href="/work"> Hobbies </a> </li>
-                </ul>
-            </div>
         </div>
-    </header>
+
+        <div class="nav-links">
+            <li> <a href="/work"> Work & Education </a> </li>
+            <li> <a href="/work"> Hobbies </a> </li>
+        </div>
+    </div>
+
     {% block content %}{% endblock %}
+    
     <div class="footer">
         <p>Footer sample text</p>
     </div>
