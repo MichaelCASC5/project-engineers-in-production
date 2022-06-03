@@ -1,13 +1,13 @@
 {% extends "index.html" %}
 {% block content %}
     <div class="large-banner">
-        <h1>John Doe the Great</h1>
+        <h1>{{data['Name']}}</h1>
     </div>
 
     <div class="center-title">
-        <h1 class="large-title">Inspirational Text</h1>
+        <h1 class="large-title">{{data['Quote']}}</h1>
         <div class="text">
-            <p>A short phrase to give a general idea of what this page, and what this fellow is about.</p>
+            <p>{{data['Pitch']}}</p>
         </div>
     </div>
 
@@ -23,20 +23,10 @@
             <!-- <div class="small-title">
                 smol
             </div> -->
-            <div class="title">ABOUT MICHAEL</div>
+            <div class="title">ABOUT ME</div>
             <div class="text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Ut suscipit condimentum mollis.
-                    Aenean luctus egestas nisi, et imperdiet lorem consectetur sed.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Ut suscipit condimentum mollis.
-                    Aenean luctus egestas nisi, et imperdiet lorem consectetur sed.
-                </p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Ut suscipit condimentum mollis.
-                    Aenean luctus egestas nisi, et imperdiet lorem consectetur sed.
-                </p>
-            </div>
+                <p>{{data['Description']}}</p>
+            </div>content
         </div>
     </div>
 
@@ -55,4 +45,3 @@
         </div>
     </div>
 {% endblock %}
- 

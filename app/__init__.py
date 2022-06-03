@@ -1,5 +1,5 @@
 import os
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, json
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -13,25 +13,25 @@ images ={
 def index():
     return render_template(
         'landingPage.html', 
-        title     = "MLH Fellow",
-        images    = images,
-        url       = os.getenv("URL")
+        title = "MLH Fellow",
+        images = images,
+        data = json.load(open("./app/static/landingPage.json")),
+        url = os.getenv("URL")
     )
 
 @app.route('/work')
 def work():
-    jobs = [
-        ["/static/img/Work_Education/Job1.jpeg","Major League Hacking","Production Engineer Fellow", "This is a description of what I did in this job", "June 2022 - August 2022"],
-    ]
-
-    education = [
-        ["/static/img/Work_Education/Job1.jpeg","Major League Hacking","Pre Fellow", "This is a description of what I did in this job", "April 2022"],
-        ["static/img/Work_Education/Edu1.jpeg", "Tec de Monterrey","BS. in Robotic and Digital Systems"],
-    ]
+    data = json.load(open("./app/static/work_edu.json"))
     return render_template(
         'Work-Education.html',
         images    = images,
-        jobs = jobs,
-        education = education
+        jobs = data["Work experience"],
+        education = data["Education"]
 
+    )
+@app.route('/hobbies')
+def hobbies():
+    return render_template(
+        'Hobbies.html',
+        images = images
     )

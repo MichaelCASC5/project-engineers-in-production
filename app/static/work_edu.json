@@ -1,0 +1,32 @@
+{
+    "Work experience":{
+        "0":{
+            "Logo": "/static/img/Work_Education/Job1.jpeg",
+            "Company": "Major League Hacking",
+            "Position": "Production Engineering Fellow",
+            "Description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit.Ut suscipit condimentum molli.Aenean luctus egestas nisi, et imperdiet lorem consectetur sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "Term": "June 2022 - August 2022"
+
+        }
+    },
+
+    "Education":{
+        "0":{
+            "Logo": "/static/img/Work_Education/Job1.jpeg",
+            "School": "Major League Hacking",
+            "Title": "Production Engineering Fellow",
+            "Description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit.Ut suscipit condimentum molli.Aenean luctus egestas nisi, et imperdiet lorem consectetur sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "Term": "June 2022 - August 2022"
+
+        },
+
+        "1":{
+            "Logo": "/static/img/Work_Education/Edu1.jpeg",
+            "School": "Instituto Tecnológico de Monterrey",
+            "Title": "BS in Robotics and Digital Systems",
+            "Description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit.Ut suscipit condimentum molli.Aenean luctus egestas nisi, et imperdiet lorem consectetur sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "Term": "August 2020 - June 2024 (expected)"
+
+        }
+    }
+}
