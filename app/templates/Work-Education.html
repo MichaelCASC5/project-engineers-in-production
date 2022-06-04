@@ -1,5 +1,6 @@
 {% extends "index.html" %}
 {% block content %}
+<div class="work-content">
     <div class="work">
         <h1> Work experience </h1>
         {% for experience in jobs %}
@@ -12,6 +13,7 @@
                         <div class="position"> {{jobs[experience]['Position']}}</div>
                         <div class="description">{{jobs[experience]['Description']}}</div>
                         <div class="term">{{jobs[experience]['Term']}}</div>
+                        <hr>
                     </div>
             </div>
         {% endfor %}
@@ -26,11 +28,14 @@
                     </div>
                     <div class="exp_details">
                         <div class="company"> {{education[experience]['School']}}</div>
-                        <div class="description">{{education[experience]['Title']}}</div>
+                        <div class="position">{{education[experience]['Title']}}</div>
+                        <div class="description">{{education[experience]['Description']}}</div>
                         <div class="term">{{education[experience]['Term']}}</div>
+                        <hr>
                     </div>
             </div>
         {% endfor %}
     </div>
+</div>
 {% endblock %}
 

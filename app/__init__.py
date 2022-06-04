@@ -13,7 +13,6 @@ images ={
 def index():
     return render_template(
         'landingPage.html', 
-        title = "MLH Fellow",
         images = images,
         data = json.load(open("./app/static/landingPage.json")),
         url = os.getenv("URL")
