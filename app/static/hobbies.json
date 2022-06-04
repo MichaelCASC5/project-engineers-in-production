@@ -2,13 +2,23 @@
     "LargeTitle":"My Hobbies",
     "Quote": "Passion for Pastimes",
     "Pitch": "Outside of work and school, I still like to challenge myself and learn new information and skills!",
-    "Name":"Michael Calle",
-    "Age" : "21",
-    "Description":"777 Lorem ipsum dolor sit amet, consectetur adipiscing elit.Ut suscipit condimentum molli.Aenean luctus egestas nisi, et imperdiet lorem consectetur sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "Hobby1Title":"Hobby 1 Title",
-    "Hobby1Description":"yarrr here be hobby 1 descriptionyarrr here be hobby 1 descriptionyarrr here be hobby 1 descriptionyarrr here be hobby 1 descriptionyarrr here be hobby 1 description",
-    "Hobby2Title":"Hobby 2 Title",
-    "Hobby2Description":"yarrr here be hobby 2 descriptionyarrr here be hobby 2 descriptionyarrr here be hobby 2 descriptionyarrr here be hobby 2 descriptionyarrr here be hobby 2 descriptionyarrr here be hobby 2 description",
-    "Hobby3Title":"Hobby 3 Title",
-    "Hobby3Description":"yarrr here be hobby 3 descriptionyarrr here be hobby 3 descriptionyarrr here be hobby 3 descriptionyarrr here be hobby 3 description"
+    "Hobbies":{
+        "0":{
+            "Picture":"/static/img/hobby1.jpg",
+            "Title": "Hobby 1 Title",
+            "Description":"yarrr here be hobby 1 descriptionyarrr here be hobby 1 descriptionyarrr here be hobby 1 descriptionyarrr here be hobby 1 descriptionyarrr here be hobby 1 description"
+        },
+
+        "1":{
+            "Picture":"/static/img/hobby2.jpg",
+            "Title": "Hobby 2 Title",
+            "Description":"yarrr here be hobby 2 descriptionyarrr here be hobby 2 descriptionyarrr here be hobby 2 descriptionyarrr here be hobby 2 descriptionyarrr here be hobby 2 description"
+        },
+
+        "2":{
+            "Picture":"/static/img/hobby3.jpg",
+            "Title": "Hobby 3 Title",
+            "Description":"yarrr here be hobby 3 descriptionyarrr here be hobby 3 descriptionyarrr here be hobby 3 descriptionyarrr here be hobby 3 descriptionyarrr here be hobby 3 description"
+        }
+    }
 }

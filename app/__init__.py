@@ -7,17 +7,13 @@ app = Flask(__name__)
 
 images ={
     "logo": "/static/img/logo.svg",
-    "profilePic" : "/static/img/michael.jpg",
-    "hobby1" : "/static/img/hobby1.jpg",
-    "hobby2" : "/static/img/hobby2.jpg",
-    "hobby3" : "/static/img/hobby3.jpg"
+    "profilePic" : "/static/img/logo.jpg"
 }
 
 @app.route('/')
 def index():
     return render_template(
         'landingPage.html', 
-        title = "MLH Fellow",
         images = images,
         data = json.load(open("./app/static/landingPage.json")),
         footer = json.load(open("./app/static/footer.json")),
@@ -32,14 +28,17 @@ def work():
         images    = images,
         jobs = data["Work experience"],
         education = data["Education"],
+        skills = data["Skills"],
         footer = json.load(open("./app/static/footer.json")),
     )
 
 @app.route('/hobbies')
 def hobbies():
+    data = json.load(open("./app/static/hobbies.json"))
     return render_template(
         'Hobbies.html',
         images = images,
-        data = json.load(open("./app/static/hobbies.json")),
+        data = data,
+        hobbies = data["Hobbies"],
         footer = json.load(open("./app/static/footer.json")),
     )

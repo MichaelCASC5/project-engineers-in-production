@@ -28,5 +28,11 @@
             "Term": "August 2020 - June 2024 (expected)"
 
         }
+    },
+
+    "Skills":{
+        "Programming languages": ["C++","C","Python","Verilog"],
+        "Soft skills": ["Communication","Leadership"],
+        "Other": ["Robotics", "Linux"]
     }
 }
