@@ -8,12 +8,8 @@ p, h1, h2, h3, h4, h5, h6, button {
     box-shadow: 0 0 0.5rem rgba(33,33,33,.2); 
  }
 
-.work{
-    padding-left: 2rem;
-
-}
-
-.Education{
+.Education, .Skills, .work{
+    padding-top: 0.5rem;
     padding-left: 2rem;
 }
 

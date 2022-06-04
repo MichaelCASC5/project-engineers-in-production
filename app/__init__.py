@@ -25,7 +25,8 @@ def work():
         'Work-Education.html',
         images    = images,
         jobs = data["Work experience"],
-        education = data["Education"]
+        education = data["Education"],
+        skills = data["Skills"]
 
     )
 @app.route('/hobbies')

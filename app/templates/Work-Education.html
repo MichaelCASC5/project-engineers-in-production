@@ -36,6 +36,23 @@
             </div>
         {% endfor %}
     </div>
+
+    <div class="Skills">
+        <h1> Skills </h1>
+        {% for category in skills  %}
+            <div class="experience">
+                    <div class="exp_details">
+                        <div class="company"> {{category}}</div>
+                        <div class="description">
+                            {% for element in skills[category] %}
+                                <li>{{element}}</li>
+                            {% endfor %}
+                        </div>
+                        <hr>
+                    </div>
+            </div>
+        {% endfor %}
+    </div>
 </div>
 {% endblock %}
 
