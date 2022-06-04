@@ -31,12 +31,8 @@ def work():
         images    = images,
         jobs = data["Work experience"],
         education = data["Education"],
-<<<<<<< HEAD
         skills = data["Skills"]
-
-=======
         footer = json.load(open("./app/static/footer.json")),
->>>>>>> main
     )
 
 @app.route('/hobbies')
