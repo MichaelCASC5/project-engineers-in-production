@@ -31,7 +31,7 @@ def work():
         images    = images,
         jobs = data["Work experience"],
         education = data["Education"],
-        skills = data["Skills"]
+        skills = data["Skills"],
         footer = json.load(open("./app/static/footer.json")),
     )
 
