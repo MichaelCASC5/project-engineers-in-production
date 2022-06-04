@@ -7,10 +7,7 @@ app = Flask(__name__)
 
 images ={
     "logo": "/static/img/logo.svg",
-    "profilePic" : "/static/img/michael.jpg",
-    "hobby1" : "/static/img/hobby1.jpg",
-    "hobby2" : "/static/img/hobby2.jpg",
-    "hobby3" : "/static/img/hobby3.jpg"
+    "profilePic" : "/static/img/michael.jpg"
 }
 
 @app.route('/')
