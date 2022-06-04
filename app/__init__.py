@@ -34,9 +34,11 @@ def work():
 
 @app.route('/hobbies')
 def hobbies():
+    data = json.load(open("./app/static/hobbies.json"))
     return render_template(
         'Hobbies.html',
         images = images,
-        data = json.load(open("./app/static/hobbies.json")),
+        data = data,
+        hobbies = data["Hobbies"],
         footer = json.load(open("./app/static/footer.json")),
     )

@@ -2,22 +2,23 @@
     "LargeTitle":"My Hobbies",
     "Quote": "Passion for Pastimes",
     "Pitch": "Outside of work and school, I still like to challenge myself and learn new information and skills!",
-    
-    "0":{
-        "Picture":"/static/img/hobby1.jpg",
-        "Title": "Hobby 1 Title",
-        "Description":"yarrr here be hobby 1 descriptionyarrr here be hobby 1 descriptionyarrr here be hobby 1 descriptionyarrr here be hobby 1 descriptionyarrr here be hobby 1 description"
-    },
+    "Hobbies":{
+        "0":{
+            "Picture":"/static/img/hobby1.jpg",
+            "Title": "Hobby 1 Title",
+            "Description":"yarrr here be hobby 1 descriptionyarrr here be hobby 1 descriptionyarrr here be hobby 1 descriptionyarrr here be hobby 1 descriptionyarrr here be hobby 1 description"
+        },
 
-    "1":{
-        "Picture":"/static/img/hobby2.jpg",
-        "Title": "Hobby 2 Title",
-        "Description":"yarrr here be hobby 2 descriptionyarrr here be hobby 2 descriptionyarrr here be hobby 2 descriptionyarrr here be hobby 2 descriptionyarrr here be hobby 2 description"
-    },
+        "1":{
+            "Picture":"/static/img/hobby2.jpg",
+            "Title": "Hobby 2 Title",
+            "Description":"yarrr here be hobby 2 descriptionyarrr here be hobby 2 descriptionyarrr here be hobby 2 descriptionyarrr here be hobby 2 descriptionyarrr here be hobby 2 description"
+        },
 
-    "2":{
-        "Picture":"/static/img/hobby3.jpg",
-        "Title": "Hobby 3 Title",
-        "Description":"yarrr here be hobby 3 descriptionyarrr here be hobby 3 descriptionyarrr here be hobby 3 descriptionyarrr here be hobby 3 descriptionyarrr here be hobby 3 description"
+        "2":{
+            "Picture":"/static/img/hobby3.jpg",
+            "Title": "Hobby 3 Title",
+            "Description":"yarrr here be hobby 3 descriptionyarrr here be hobby 3 descriptionyarrr here be hobby 3 descriptionyarrr here be hobby 3 descriptionyarrr here be hobby 3 description"
+        }
     }
 }
