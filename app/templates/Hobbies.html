@@ -1,4 +1,66 @@
 {% extends "index.html" %}
 {% block content %}
-    <h1> Hobbies </h1>
+    <div class="narrow-banner">
+        <h1>{{data['LargeTitle']}}</h1>
+    </div>
+
+    <div class="center-title">
+        <h1 class="large-title">{{data['Quote']}}</h1>
+        <div class="text">
+            <p>{{data['Pitch']}}</p>
+        </div>
+    </div>
+
+    <!-- 
+        The next three sections (3 hobbies) could use some optimizing (?)
+        I just have no idea how to do it.
+     -->
+
+    <!-- Hobby 1 -->
+    <div class="gridrow">
+        <div class="profile">
+            <div id="profile-picture" class="profile-picture">
+                <img src="{{images['hobby1']}}"/>
+            </div>
+        </div>
+        
+        <div class="column-center">
+            <div class="title">{{data['Hobby1Title']}}</div>
+            <div class="text">
+                <p>{{data['Hobby1Description']}}</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hobby 2 -->
+    <div class="gridrow">
+        <div class="column-center">
+            <div class="title">{{data['Hobby2Title']}}</div>
+            <div class="text">
+                <p>{{data['Hobby2Description']}}</p>
+            </div>
+        </div>
+
+        <div class="profile">
+            <div id="profile-picture" class="profile-picture">
+                <img src="{{images['hobby2']}}"/>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hobby 3 -->
+    <div class="gridrow">
+        <div class="profile">
+            <div id="profile-picture" class="profile-picture">
+                <img src="{{images['hobby3']}}"/>
+            </div>
+        </div>
+        
+        <div class="column-center">
+            <div class="title">{{data['Hobby3Title']}}</div>
+            <div class="text">
+                <p>{{data['Hobby3Description']}}</p>
+            </div>
+        </div>
+    </div>
 {%endblock%}
