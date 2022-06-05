@@ -18,6 +18,11 @@
     <link lang='sass' rel="stylesheet" href="./static/styles/work_education.css">
     <link rel='icon' href='./static/img/favicon.ico' type='image/x-icon' />
     <title> Fellow's Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.1/mapsjs-ui.css" />
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-core.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-service.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-ui.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js"></script>
 </head>
     <body>
         <!-- NAV BAR -->
@@ -56,5 +61,6 @@
                 </div>
             </div>
         </div>
+        <script type="text/javascript" src="{{url_for('static', filename='map.js')}}"></script>
     </body>
 </html>

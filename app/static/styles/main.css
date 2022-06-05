@@ -299,3 +299,14 @@ body {
 
     line-height: 1.6em;
 }
+
+#map {
+    width: 60%;
+    height: 25rem;
+    background: grey;
+}
+
+#panel {
+    width: 65%;
+    height: 25rem;
+}
