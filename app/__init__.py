@@ -4,7 +4,6 @@ from dotenv import load_dotenv
 
 load_dotenv()
 app = Flask(__name__)
-
 images ={
     "logo": "/static/img/logo.svg",
     "profilePic" : "/static/img/logo.jpg"
