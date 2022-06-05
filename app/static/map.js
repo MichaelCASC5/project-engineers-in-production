@@ -7,9 +7,6 @@
   var romeMarker = new H.map.Marker({lat:41.9, lng: 12.5});
   map.addObject(romeMarker);
 
-  var berlinMarker = new H.map.Marker({lat:52.5166, lng:13.3833});
-  map.addObject(berlinMarker);
-
   var londonMarker = new H.map.Marker({lat:51.5008, lng:-0.1224});
   map.addObject(londonMarker);
 
@@ -18,6 +15,10 @@
 
   var mexicoCityMarker = new H.map.Marker({lat:19.432608, lng:-99.133209});
   map.addObject(mexicoCityMarker);
+
+  var nycMarker = new H.map.Marker({lat:40.712776, lng:-74.005974});
+  map.addObject(nycMarker);
+
 }
 
  function setInteractive(map){
@@ -56,8 +57,8 @@
   //Step 2: initialize a map
   var map = new H.Map(document.getElementById('map'),
     defaultLayers.vector.normal.map, {
-    center: {lat: 19.242920, lng: -103.728119},
-    zoom: 8,
+    center: {lat: 33.1036276975251, lng:  -39.85791020719383},
+    zoom: 2,
     pixelRatio: window.devicePixelRatio || 1
   });
   // add a resize listener to make sure that the map occupies the whole container
