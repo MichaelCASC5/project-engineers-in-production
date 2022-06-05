@@ -4,58 +4,60 @@
     <h1 class="type-text"> Work, Education & Skills</h1>
 </div>
 
-<div class="work-content">
-    <div class="work">
-        <h1> Work experience </h1>
-        {% for experience in jobs %}
-            <div class="experience">
-                    <div class="exp_img">
-                        <img src="{{jobs[experience]['Logo']}}"/>
-                    </div>
-                    <div class="exp_details">
-                        <div class="company"> {{jobs[experience]['Company']}}</div>
-                        <div class="position"> {{jobs[experience]['Position']}}</div>
-                        <div class="description">{{jobs[experience]['Description']}}</div>
-                        <div class="term">{{jobs[experience]['Term']}}</div>
-                        <hr>
-                    </div>
-            </div>
-        {% endfor %}
-    </div>
-
-    <div class="Education">
-        <h1> Education </h1>
-        {% for experience in education  %}
-            <div class="experience">
-                    <div class="exp_img">
-                        <img src="{{education[experience]['Logo']}}"/>
-                    </div>
-                    <div class="exp_details">
-                        <div class="company"> {{education[experience]['School']}}</div>
-                        <div class="position">{{education[experience]['Title']}}</div>
-                        <div class="description">{{education[experience]['Description']}}</div>
-                        <div class="term">{{education[experience]['Term']}}</div>
-                        <hr>
-                    </div>
-            </div>
-        {% endfor %}
-    </div>
-
-    <div class="Skills">
-        <h1> Skills </h1>
-        {% for category in skills  %}
-            <div class="experience">
-                    <div class="exp_details">
-                        <div class="company"> {{category}}</div>
-                        <div class="description">
-                            {% for element in skills[category] %}
-                                <li>{{element}}</li>
-                            {% endfor %}
+<div class="work-body">
+    <div class="work-content">
+        <div class="work">
+            <h1> Work experience </h1>
+            {% for experience in jobs %}
+                <div class="experience">
+                        <div class="exp_img">
+                            <img src="{{jobs[experience]['Logo']}}"/>
                         </div>
-                        <hr>
-                    </div>
-            </div>
-        {% endfor %}
+                        <div class="exp_details">
+                            <div class="company"> {{jobs[experience]['Company']}}</div>
+                            <div class="position"> {{jobs[experience]['Position']}}</div>
+                            <div class="description">{{jobs[experience]['Description']}}</div>
+                            <div class="term">{{jobs[experience]['Term']}}</div>
+                            <hr>
+                        </div>
+                </div>
+            {% endfor %}
+        </div>
+
+        <div class="Education">
+            <h1> Education </h1>
+            {% for experience in education  %}
+                <div class="experience">
+                        <div class="exp_img">
+                            <img src="{{education[experience]['Logo']}}"/>
+                        </div>
+                        <div class="exp_details">
+                            <div class="company"> {{education[experience]['School']}}</div>
+                            <div class="position">{{education[experience]['Title']}}</div>
+                            <div class="description">{{education[experience]['Description']}}</div>
+                            <div class="term">{{education[experience]['Term']}}</div>
+                            <hr>
+                        </div>
+                </div>
+            {% endfor %}
+        </div>
+
+        <div class="Skills">
+            <h1> Skills </h1>
+            {% for category in skills  %}
+                <div class="experience">
+                        <div class="exp_details">
+                            <div class="company"> {{category}}</div>
+                            <div class="description">
+                                {% for element in skills[category] %}
+                                    <li>{{element}}</li>
+                                {% endfor %}
+                            </div>
+                            <hr>
+                        </div>
+                </div>
+            {% endfor %}
+        </div>
     </div>
 </div>
 {% endblock %}
