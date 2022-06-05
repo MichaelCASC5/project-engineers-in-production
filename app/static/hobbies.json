@@ -6,19 +6,19 @@
         "0":{
             "Picture":"/static/img/hobby1.jpg",
             "Title": "Hobby 1 Title",
-            "Description":"yarrr here be hobby 1 descriptionyarrr here be hobby 1 descriptionyarrr here be hobby 1 descriptionyarrr here be hobby 1 descriptionyarrr here be hobby 1 description"
+            "Description":"Descripion #1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut suscipit condimentum molli.Aenean luctus egestas nisi, et imperdiet lorem consectetur sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
         },
 
         "1":{
             "Picture":"/static/img/hobby2.jpg",
             "Title": "Hobby 2 Title",
-            "Description":"yarrr here be hobby 2 descriptionyarrr here be hobby 2 descriptionyarrr here be hobby 2 descriptionyarrr here be hobby 2 descriptionyarrr here be hobby 2 description"
+            "Description":"Descripion #2: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut suscipit condimentum molli.Aenean luctus egestas nisi, et imperdiet lorem consectetur sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
         },
 
         "2":{
             "Picture":"/static/img/hobby3.jpg",
             "Title": "Hobby 3 Title",
-            "Description":"yarrr here be hobby 3 descriptionyarrr here be hobby 3 descriptionyarrr here be hobby 3 descriptionyarrr here be hobby 3 descriptionyarrr here be hobby 3 description"
+            "Description":"Descripion #3: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut suscipit condimentum molli.Aenean luctus egestas nisi, et imperdiet lorem consectetur sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
         }
     }
 }

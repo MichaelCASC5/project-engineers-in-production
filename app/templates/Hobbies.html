@@ -10,8 +10,13 @@
             <p>{{data['Pitch']}}</p>
         </div>
     </div>
+
     {%for hobby in hobbies%}
-        <div class="gridrow">
+        {% if loop.index is divisibleby 2 %}
+            <div class="gridrow-reverse">
+        {% else %}
+            <div class="gridrow">
+        {% endif %}
             <div class="profile">
                 <div id="profile-picture" class="profile-picture">
                     <img src="{{hobbies[hobby]['Picture']}}"/>
