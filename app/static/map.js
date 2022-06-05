@@ -1,6 +1,25 @@
 /**
  * @param  {H.Map} map      A HERE Map instance within the application
  */
+
+ function addMarkersToMap(map) {
+
+  var romeMarker = new H.map.Marker({lat:41.9, lng: 12.5});
+  map.addObject(romeMarker);
+
+  var berlinMarker = new H.map.Marker({lat:52.5166, lng:13.3833});
+  map.addObject(berlinMarker);
+
+  var londonMarker = new H.map.Marker({lat:51.5008, lng:-0.1224});
+  map.addObject(londonMarker);
+
+  var colimaMarker = new H.map.Marker({lat:19.243919, lng:-103.728539});
+  map.addObject(colimaMarker);
+
+  var mexicoCityMarker = new H.map.Marker({lat:19.432608, lng:-99.133209});
+  map.addObject(mexicoCityMarker);
+}
+
  function setInteractive(map){
     // get the vector provider from the base layer
     var provider = map.getBaseLayer().getProvider();
@@ -87,3 +106,7 @@
   
   // Now use the map as required...
   setInteractive(map);
+
+  window.onload = function () {
+    addMarkersToMap(map);
+  }
