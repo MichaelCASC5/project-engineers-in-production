@@ -1,11 +1,21 @@
 {
-    "Title1": "Contact",
-    "Description1": "Descripion #1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut suscipit condimentum molli.Aenean luctus egestas nisi, et imperdiet lorem consectetur sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "Title2": "Information",
-    "Description2": "Descripion #2: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut suscipit condimentum molli.Aenean luctus egestas nisi, et imperdiet lorem consectetur sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "Title3": "Social Media",
-    "Description3": "Descripion #3: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut suscipit condimentum molli.Aenean luctus egestas nisi, et imperdiet lorem consectetur sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "PhoneNumber": "1-234-567-8900",
-    "Email": "mlhstudentemail@gmail.com",
-    "Location": "A Place On Earth, A Place On, On Earth, Earth"
+    "FooterInformation":{
+        "0":{
+            "Title": "Contact",
+            "Description": "Descripion #1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut suscipit condimentum molli.Aenean luctus egestas nisi, et imperdiet lorem consectetur sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "PhoneNumber": "1-234-567-8900",
+            "Email": "mlhstudentemail@gmail.com",
+            "Location": "A Place On Earth, A Place On, On Earth, Earth"
+        },
+
+        "1":{
+            "Title": "Information",
+            "Description": "Descripion #2: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut suscipit condimentum molli.Aenean luctus egestas nisi, et imperdiet lorem consectetur sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+
+        "2":{
+            "Title": "Social Media",
+            "Description": "Descripion #3: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut suscipit condimentum molli.Aenean luctus egestas nisi, et imperdiet lorem consectetur sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        }
+    }
 }
