@@ -45,37 +45,37 @@
                 <li> <a href="/hobbies"> Hobbies </a> </li>
             </div>
         </div>
-
+        
         {% block content %}{% endblock %}
 
         <!-- FOOTER -->
         <div class="footer">
             <div class="footer-grid">
-                <div class="footer-text">
-                    <h1>{{footer['Title1']}}</h1>
-                    <p>+{{footer['PhoneNumber']}}<br>
-						<a href="mailto:#">{{footer['Email']}}</a><br>
-						<br>
-						{{footer['Location']}}
-					</p>
-                </div>
-                <br>
-                <div class="footer-text">
-                    <h1>{{footer['Title2']}}</h1>
-                    <p>{{footer['Description2']}}</p>
-                </div>
-                <br>
-                <div class="footer-text">
-                    <h1>{{footer['Title3']}}</h1>
-                    <p>{{footer['Description3']}}</p>
-                    <p class="icons">
-                        <a href="https://github.com/MLH" target="_blank"><i class="fa fa-github fa-2"></i></a>
-                        <a href="https://www.youtube.com/c/Majorleaguehacking" target="_blank"><i class="fa fa-youtube fa-2"></i></a>
-                        <a href="https://www.linkedin.com/company/major-league-hacking?original_referer=https%3A%2F%2Fwww.google.com%2F" target="_blank"><i class="fa fa-linkedin fa-2"></i></a>
-                        <a href="https://www.instagram.com/mlhacks/?hl=en" target="_blank"><i class="fa fa-instagram fa-2"></i></a>
-                        <a href="https://www.facebook.com/MajorLeagueHacking/" target="_blank"><i class="fa fa-facebook fa-2"></i></a>
-                    </p>
-                </div>
+                {% for i in info %}
+                    <div class="footer-text">
+                        <h1>{{ info[i]['Title'] }}</h1>
+                        
+                        {% if loop.index == 1 %}
+                            <p>+{{info[i]['PhoneNumber']}}<br>
+                                <a href="mailto:#">{{info[i]['Email']}}</a><br>
+                                <br>
+                                {{info[i]['Location']}}
+                            </p>
+                        {% else %}
+                            <p>{{ info[i]['Description'] }}</p>
+                        {% endif %}
+                        {% if loop.index == 3 %}
+                            <p class="icons">
+                                <a href="https://github.com/MLH" target="_blank"><i class="fa fa-github fa-2"></i></a>
+                                <a href="https://www.youtube.com/c/Majorleaguehacking" target="_blank"><i class="fa fa-youtube fa-2"></i></a>
+                                <a href="https://www.linkedin.com/company/major-league-hacking?original_referer=https%3A%2F%2Fwww.google.com%2F" target="_blank"><i class="fa fa-linkedin fa-2"></i></a>
+                                <a href="https://www.instagram.com/mlhacks/?hl=en" target="_blank"><i class="fa fa-instagram fa-2"></i></a>
+                                <a href="https://www.facebook.com/MajorLeagueHacking/" target="_blank"><i class="fa fa-facebook fa-2"></i></a>
+                            </p>
+                        {% endif %}
+                        <br>
+                    </div>
+                {% endfor %}
             </div>
         </div>
 
