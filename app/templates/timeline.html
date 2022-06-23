@@ -1,0 +1,32 @@
+{% extends "index.html" %}
+{% block content %}
+
+<div class="narrow-banner">
+    <h1 class="type-text">My Timeline</h1>
+</div>
+
+<div class="center-title">
+    <h1 class="large-title">Timeline Title</h1>
+    <div class="text">
+        <p>Enter your information to post an event to the timeline!</p>
+    </div>
+</div>
+
+<form id="form">
+    <label for="name_input">Enter Name:</label>
+    <input name="name" type="text">
+
+    <label for="email_input">Enter email:</label>
+    <input name="email" type="email">
+
+    <label for="content_input">Enter content:</label>
+    <input name="content_input" type="content_input">
+
+    <button type="submit">Post</button>
+
+    <div>
+        <p id="time_text">Hello</p>
+    </div>
+</form>
+
+{%endblock%}

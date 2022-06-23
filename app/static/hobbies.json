@@ -20,5 +20,9 @@
             "Title": "Hobby 3 Title",
             "Description":"Descripion #3: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut suscipit condimentum molli.Aenean luctus egestas nisi, et imperdiet lorem consectetur sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
         }
+    },
+    "Conclusion":{
+        "Title":"Pictures of the Places",
+        "Text":"General description of the following images and elaboration on information from the map."
     }
 }
