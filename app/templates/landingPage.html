@@ -34,12 +34,16 @@
     </div>
 
     <div class="map-background">
-        <div class="map-banner">
-            <div class="text">
-                <h1 class="map-title">My Travels</h1>
-                <p>123 Lorem ipsum dolor sit amet, consectetur adipiscing elit.Ut suscipit condimentum molli.Aenean luctus egestas nisi, et imperdiet lorem consectetur sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit. 123 Lorem ipsum dolor sit amet, consectetur adipiscing elit.Ut suscipit condimentum molli.Aenean luctus egestas nisi, et imperdiet lorem consectetur sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit.123 Lorem ipsum dolor sit amet, consectetur adipiscing elit.Ut suscipit condimentum molli.Aenean luctus egestas nisi, et imperdiet lorem consectetur sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div>
+            <h1 class="large-white-title">My Mission</h1>
+        </div>
+        <div class="footer-grid">
+            {% for i in range(3) %}
+            <div class="white-text">
+                <h1>Title</h1>
+                <p>{{data['Description']}}</p>
             </div>
-            <div id="map"></div>
+            {% endfor %}
         </div>
     </div>
 
@@ -49,6 +53,17 @@
             <p>{{data['BottomText']}}</p>
         </div>
         <br>
+    </div>
+
+    <div class="image-grid-area">
+        {% for i in range(2) %}
+        <div class="image-grid">
+            {% for i in range(3) %}
+                <img src="{{images['desk']}}"/>
+                <a href="https://www.youtube.com/" target="_blank"> See More</a>
+            {% endfor %}
+        </div>
+        {% endfor %}
     </div>
 
 {% endblock %}

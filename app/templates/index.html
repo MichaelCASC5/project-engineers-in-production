@@ -16,6 +16,7 @@
 
     <link lang='sass' rel="stylesheet" href="./static/styles/main.css">
     <link lang='sass' rel="stylesheet" href="./static/styles/work_education.css">
+    <link lang='sass' rel="stylesheet" href="./static/styles/form.css">
     <link rel='icon' href='./static/img/favicon.ico' type='image/x-icon' />
     <title> Fellow's Portfolio</title>
 
@@ -34,6 +35,10 @@
             <div class="nav-links">
                 <li> <a href="/work"> Work & Education </a> </li>
             </div>
+
+            <div class="nav-links">
+                <li> <a href="/work"> Company </a> </li>
+            </div>
             
             <div class="nav-logo">
                 <a href="/">
@@ -43,6 +48,10 @@
 
             <div class="nav-links">
                 <li> <a href="/hobbies"> Hobbies </a> </li>
+            </div>
+
+            <div class="nav-links">
+                <li> <a href="/timeline"> Timeline </a> </li>
             </div>
         </div>
         
@@ -83,5 +92,6 @@
             <p>Copyright &copy; 2022, John Johnson</p>
         </div>
         <script type="text/javascript" src="{{url_for('static', filename='map.js')}}"></script>
+        <script type="text/javascript" src="{{url_for('static', filename='form.js')}}"></script>
     </body>
 </html>
