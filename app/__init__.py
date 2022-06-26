@@ -33,6 +33,8 @@ images = {
     "logo": "/static/img/logo.svg",
     "profilePic" : "/static/img/logo.jpg",
     "desk" : "/static/img/desk_background.jpg"
+    "desk" : "/static/img/desk_background.jpg",
+    "travel" : "/static/img/travel.jpeg"
 }
 
 @app.route('/')
@@ -84,7 +86,18 @@ def timeline():
         conclusion = data["Conclusion"],
         info = footer["FooterInformation"],
     )
-
+@app.route('/timeline')
+def timeline():
+    data = json.load(open("./app/static/hobbies.json"))
+    footer = json.load(open("./app/static/footer.json"))
+    return render_template(
+        'timeline.html',
+        images = images,
+        data = data,
+        hobbies = data["Hobbies"],
+        conclusion = data["Conclusion"],
+        info = footer["FooterInformation"],
+    )
 # @app.route('/timeline')
 # def timeline():
 #     return render_template('timeline.html',title="Timeline")
@@ -95,6 +108,11 @@ def post_time_line_post():
     email = request.form['email']
     content = request.form['content']
     timeline_post = TimelinePost.create(name=name, email=email, content=content)
+    timeline_post = TimelinePost.create(
+        name=name,
+        email=email,
+        content=content
+    )
 
     return model_to_dict(timeline_post)
 

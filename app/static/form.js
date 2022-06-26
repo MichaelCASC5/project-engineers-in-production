@@ -68,6 +68,29 @@ form.addEventListener('submit', function (e) {
         .then(res => res.json())
         .then(data => console.log(data))
         .catch(err => console.log(err))
+    const payload = new FormData(form);
+
+    fetch('/api/timeline_post', {
+        method: 'POST',
+        body:payload
+    })
+
+    .then(res => res.json())
+
+    form.reset()
+
+    // const prePayload = new FormData(form)
+    // const payload = new URLSearchParams(prePayload)
+
+    // console.log([...payload])
+
+    // fetch('http://127.0.0.1:5000/api/timeline_post', {
+    //     method: "POST",
+    //     body:payload,
+    // })
+    //     .then(res => res.json())
+    //     .then(data => console.log(data))
+    //     .catch(err => console.log(err))
 })
 
 /*
