@@ -8,12 +8,16 @@ from dotenv import load_dotenv
 load_dotenv()
 app = Flask(__name__)
 
-mydb = MySQLDatabase(os.getenv("MYSQL_DATABASE"),
-    user=os.getenv("MYSQL_USER"),
-    password=os.getenv("MYSQL_PASSWORD"),
-    host=os.getenv("MYSQL_HOST"),
-    port=3306
-)
+if os.getenv("TESTING") == "true":
+    print("Running in test mode")
+    mydb = SqliteDatabase('file:memory?mode=memory&cache=shared', uri=True)
+else:
+    mydb = MySQLDatabase(os.getenv("MYSQL_DATABASE"),
+        user=os.getenv("MYSQL_USER"),
+        password=os.getenv("MYSQL_PASSWORD"),
+        host=os.getenv("MYSQL_HOST"),
+        port=3306
+    )
 
 print("firstprint",mydb)
 
@@ -36,21 +40,38 @@ images = {
     "travel" : "/static/img/travel.jpeg"
 }
 
+#fixing warning:  Enable tracemalloc to get the object allocation traceback
+footerF = open("./app/static/footer.json")
+footerJson = json.load(footerF)
+footerF.close()
+
+landingF = open("./app/static/landingPage.json")
+landing = json.load(landingF)
+landingF.close()
+
+workF = open("./app/static/landingPage.json")
+work = json.load(workF)
+workF.close()
+
+hobbiesF = open("./app/static/hobbies.json")
+hobbies = json.load(hobbiesF)
+hobbiesF.close()
+
 @app.route('/')
 def index():
-    footer = json.load(open("./app/static/footer.json"))
+    
     return render_template(
         'landingPage.html', 
         images = images,
-        data = json.load(open("./app/static/landingPage.json")),
-        info = footer["FooterInformation"],
+        data = landing,
+        info = footerJson["FooterInformation"],
         url = os.getenv("URL")
     )
 
 @app.route('/work')
 def work():
-    data = json.load(open("./app/static/work_edu.json"))
-    footer = json.load(open("./app/static/footer.json"))
+    data = work
+    footer = footerJson
     return render_template(
         'Work-Education.html',
         images    = images,
@@ -62,8 +83,8 @@ def work():
 
 @app.route('/hobbies')
 def hobbies():
-    data = json.load(open("./app/static/hobbies.json"))
-    footer = json.load(open("./app/static/footer.json"))
+    data = hobbies
+    footer = footerJson
     return render_template(
         'hobbies.html',
         images = images,
@@ -75,8 +96,8 @@ def hobbies():
 
 @app.route('/timeline')
 def timeline():
-    data = json.load(open("./app/static/hobbies.json"))
-    footer = json.load(open("./app/static/footer.json"))
+    data = hobbies
+    footer = footerJson
     return render_template(
         'timeline.html',
         images = images,
