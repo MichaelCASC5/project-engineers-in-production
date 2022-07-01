@@ -2,8 +2,9 @@ from peewee import *
 import datetime
 from playhouse.shortcuts import model_to_dict
 import os
-from flask import Flask, render_template, request, json
+from flask import Flask, Response, render_template, request, json
 from dotenv import load_dotenv
+import re
 
 load_dotenv()
 app = Flask(__name__)
@@ -113,9 +114,25 @@ def timeline():
 
 @app.route('/api/timeline_post', methods=['POST'])
 def post_time_line_post():
-    name = request.form['name']
-    email = request.form['email']
-    content = request.form['content']
+
+    try:
+        name = request.form['name']
+        if name == '': raise Exception()
+    except:
+        return "Invalid name", 400
+    
+    try:
+        email = request.form['email']
+        if email == '' or not re.match('[^@]+@[^@]+\.[^@]+',email): raise Exception()
+    except:
+        return "Invalid email", 400
+    
+    try:
+        content = request.form['content']
+        if content == '': raise Exception()
+    except:
+        return "Invalid content", 400
+
     timeline_post = TimelinePost.create(
         name=name,
         email=email,

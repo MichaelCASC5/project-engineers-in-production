@@ -46,8 +46,8 @@ class AppTestCase(unittest.TestCase):
 
         #additional timeline page tests
         response = self.client.get("/timeline")
-        html = response.get_data(as_text=True)
-        assert "<form id=\"form\">" in html
+        response_text  = response.get_data(as_text=True)
+        assert "<form id=\"form\">" in response_text 
 
     def test_malformed_timeline_post(self):
         # Invalid Posts tests
@@ -57,22 +57,22 @@ class AppTestCase(unittest.TestCase):
                 "content":"Hello world, I'm John"
             }
         )
-
+        
         assert response.status_code == 400
-        html = response.get_data(as_text=True)
-        assert "Invalid name" in html
+        response_text  = response.get_data(as_text=True)
+        assert "Invalid name" in response_text 
 
         response = self.client.post('/api/timeline_post',
             data= {
                 "name":"John Doe",
                 "email":"john@example.com",
-                "content": " " 
+                "content": "" 
             }
         )
 
         assert response.status_code == 400
-        html = response.get_data(as_text=True)
-        assert "Invalid content" in html
+        response_text  = response.get_data(as_text=True)
+        assert "Invalid content" in response_text 
 
         response = self.client.post('/api/timeline_post',
             data= {
