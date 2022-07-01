@@ -49,12 +49,12 @@ landingF = open("./app/static/landingPage.json")
 landing = json.load(landingF)
 landingF.close()
 
-workF = open("./app/static/landingPage.json")
-work = json.load(workF)
+workF = open("./app/static/work_edu.json")
+workJson = json.load(workF)
 workF.close()
 
 hobbiesF = open("./app/static/hobbies.json")
-hobbies = json.load(hobbiesF)
+hobbiesJson = json.load(hobbiesF)
 hobbiesF.close()
 
 @app.route('/')
@@ -70,7 +70,7 @@ def index():
 
 @app.route('/work')
 def work():
-    data = work
+    data = workJson
     footer = footerJson
     return render_template(
         'Work-Education.html',
@@ -83,27 +83,27 @@ def work():
 
 @app.route('/hobbies')
 def hobbies():
-    data = hobbies
+    datahobbies = hobbiesJson
     footer = footerJson
     return render_template(
         'hobbies.html',
         images = images,
-        data = data,
-        hobbies = data["Hobbies"],
-        conclusion = data["Conclusion"],
+        data = datahobbies,
+        hobbies = datahobbies["Hobbies"],
+        conclusion = datahobbies["Conclusion"],
         info = footer["FooterInformation"],
     )
 
 @app.route('/timeline')
 def timeline():
-    data = hobbies
+    datahobbies = hobbiesJson
     footer = footerJson
     return render_template(
         'timeline.html',
         images = images,
-        data = data,
-        hobbies = data["Hobbies"],
-        conclusion = data["Conclusion"],
+        data = datahobbies,
+        hobbies = datahobbies["Hobbies"],
+        conclusion = datahobbies["Conclusion"],
         info = footer["FooterInformation"],
     )
 
