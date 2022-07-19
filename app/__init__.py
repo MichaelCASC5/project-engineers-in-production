@@ -2,18 +2,23 @@ from peewee import *
 import datetime
 from playhouse.shortcuts import model_to_dict
 import os
-from flask import Flask, render_template, request, json
+from flask import Flask, Response, render_template, request, json
 from dotenv import load_dotenv
+import re
 
 load_dotenv()
 app = Flask(__name__)
 
-mydb = MySQLDatabase(os.getenv("MYSQL_DATABASE"),
-    user=os.getenv("MYSQL_USER"),
-    password=os.getenv("MYSQL_PASSWORD"),
-    host=os.getenv("MYSQL_HOST"),
-    port=3306
-)
+if os.getenv("TESTING") == "true":
+    print("Running in test mode")
+    mydb = SqliteDatabase('file:memory?mode=memory&cache=shared', uri=True)
+else:
+    mydb = MySQLDatabase(os.getenv("MYSQL_DATABASE"),
+        user=os.getenv("MYSQL_USER"),
+        password=os.getenv("MYSQL_PASSWORD"),
+        host=os.getenv("MYSQL_HOST"),
+        port=3306
+    )
 
 print("firstprint",mydb)
 
@@ -36,21 +41,38 @@ images = {
     "travel" : "/static/img/travel.jpeg"
 }
 
+#fixing warning:  Enable tracemalloc to get the object allocation traceback
+footerF = open("./app/static/footer.json")
+footerJson = json.load(footerF)
+footerF.close()
+
+landingF = open("./app/static/landingPage.json")
+landing = json.load(landingF)
+landingF.close()
+
+workF = open("./app/static/work_edu.json")
+workJson = json.load(workF)
+workF.close()
+
+hobbiesF = open("./app/static/hobbies.json")
+hobbiesJson = json.load(hobbiesF)
+hobbiesF.close()
+
 @app.route('/')
 def index():
-    footer = json.load(open("./app/static/footer.json"))
+    
     return render_template(
         'landingPage.html', 
         images = images,
-        data = json.load(open("./app/static/landingPage.json")),
-        info = footer["FooterInformation"],
+        data = landing,
+        info = footerJson["FooterInformation"],
         url = os.getenv("URL")
     )
 
 @app.route('/work')
 def work():
-    data = json.load(open("./app/static/work_edu.json"))
-    footer = json.load(open("./app/static/footer.json"))
+    data = workJson
+    footer = footerJson
     return render_template(
         'Work-Education.html',
         images    = images,
@@ -62,27 +84,27 @@ def work():
 
 @app.route('/hobbies')
 def hobbies():
-    data = json.load(open("./app/static/hobbies.json"))
-    footer = json.load(open("./app/static/footer.json"))
+    datahobbies = hobbiesJson
+    footer = footerJson
     return render_template(
         'hobbies.html',
         images = images,
-        data = data,
-        hobbies = data["Hobbies"],
-        conclusion = data["Conclusion"],
+        data = datahobbies,
+        hobbies = datahobbies["Hobbies"],
+        conclusion = datahobbies["Conclusion"],
         info = footer["FooterInformation"],
     )
 
 @app.route('/timeline')
 def timeline():
-    data = json.load(open("./app/static/hobbies.json"))
-    footer = json.load(open("./app/static/footer.json"))
+    datahobbies = hobbiesJson
+    footer = footerJson
     return render_template(
         'timeline.html',
         images = images,
-        data = data,
-        hobbies = data["Hobbies"],
-        conclusion = data["Conclusion"],
+        data = datahobbies,
+        hobbies = datahobbies["Hobbies"],
+        conclusion = datahobbies["Conclusion"],
         info = footer["FooterInformation"],
     )
 
@@ -92,9 +114,25 @@ def timeline():
 
 @app.route('/api/timeline_post', methods=['POST'])
 def post_time_line_post():
-    name = request.form['name']
-    email = request.form['email']
-    content = request.form['content']
+
+    try:
+        name = request.form['name']
+        if name == '': raise Exception()
+    except:
+        return "Invalid name", 400
+    
+    try:
+        email = request.form['email']
+        if email == '' or not re.match('[^@]+@[^@]+\.[^@]+',email): raise Exception()
+    except:
+        return "Invalid email", 400
+    
+    try:
+        content = request.form['content']
+        if content == '': raise Exception()
+    except:
+        return "Invalid content", 400
+
     timeline_post = TimelinePost.create(
         name=name,
         email=email,
