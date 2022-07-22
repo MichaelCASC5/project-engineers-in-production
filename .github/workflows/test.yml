@@ -23,6 +23,9 @@ jobs:
           python-version: '3.6.8' #Change to your desired Python version
         
       - name: Setup Python Virtual Environment
+        run: python -m venv python3-virtualenv
+      
+      - name: Install Dependencies
         run: python3-virtualenv/bin/pip install -r requirements.txt
       
       - name: Run Tests
