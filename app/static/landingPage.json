@@ -9,16 +9,16 @@
     "BottomText": "",
     "Skills":{
         "0":{
-            "Title":"Title0",
-            "Description":"Description0"
+            "Title":"Web Development",
+            "Description":"Ever since I was introducted to HTML, CSS, and Javascript over the 6-week long summer intensive AllStarCode, I've been madly in love with it. Take this website as an example of what I've been practicing to be able to do! I'm currently looking for an internship to work alongside professionals!"
         },
         "1":{
-            "Title":"Title1",
-            "Description":"Description1"
+            "Title":"3D Computer Graphics",
+            "Description":"Lots of my love to create can be expressed here. I've made art in programs such as Blender 3D, and simulations in programs such as Unity 3D. I've been doing it for about 8 years, and I don't think I'm going to stop anytime soon. I hope that one day I'll be able to put my 3D skills to the test!"
         },
         "2":{
-            "Title":"Title2",
-            "Description":"Description2"
+            "Title":"Intensives and Extracurriculars",
+            "Description":"I've enrolled myself in many courses to not only improve my ability to code and work on projects, but also to work with people, and on a team. I've attended the Yleana Leadership Foundation at Colgate University, AllStarCode at Goldman Sachs, and Bridge to Enter Advanced Mathematics at NYU."
         }
     }
 }
