@@ -6,19 +6,5 @@
     "Quote": "A Creative Techie",
     "Pitch": "I'm passionate about technology, and I'm always working on some new project to push myself and grow my skills.",
     "Conclusion": "Things I've Made",
-    "BottomText": "",
-    "Skills":{
-        "0":{
-            "Title":"Title0",
-            "Description":"Description0"
-        },
-        "1":{
-            "Title":"Title1",
-            "Description":"Description1"
-        },
-        "2":{
-            "Title":"Title2",
-            "Description":"Description2"
-        }
-    }
+    "BottomText": ""
 }
