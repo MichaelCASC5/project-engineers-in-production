@@ -5,8 +5,8 @@
     "Description": "Many years ago when I first discovered computer science and programming, I gained the ability to create virtually anything, only limited by what I could learn myself. Since then, I've found myself coding and building programs in as much freetime as I could afford; I grew an an incessant urge to expand my technological ability in this endless fire to continue to work to build greater and greater things. That is now what I am here for. I want to put my yearning to create into building the future, and this website marks my first steps into the real world of computer science.",
     "Quote": "A Creative Techie",
     "Pitch": "I'm passionate about technology, and I'm always working on some new project to push myself and grow my skills.",
-    "Conclusion": "Things I've Made",
-    "BottomText": "blah blah blah.",
+    "Conclusion": "My Experiences",
+    "BottomText": "Here are the relevant extracurriculars, intensives, and internships that I've done so far.",
     "Skills":{
         "0":{
             "Title":"Web Development",
@@ -19,6 +19,24 @@
         "2":{
             "Title":"Intensives and Extracurriculars",
             "Description":"I've enrolled myself in many courses to not only improve my ability to code and work on projects, but also to work with people, and on a team. I've attended the Yleana Leadership Foundation at Colgate University, AllStarCode at Goldman Sachs, and Bridge to Enter Advanced Mathematics at NYU."
+        }
+    },
+    "Work experience":{
+        "0":{
+            "Logo": "/static/img/Work_Education/Job1.jpeg",
+            "Company": "Major League Hacking",
+            "Position": "Production Engineering Fellow",
+            "Description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit.Ut suscipit condimentum molli.Aenean luctus egestas nisi, et imperdiet lorem consectetur sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "Term": "June 2022 - August 2022"
+
+        },
+        "1":{
+            "Logo": "/static/img/Work_Education/Edu1.jpeg",
+            "Company": "Major League Hacking",
+            "Position": "Production Engineering Fellow",
+            "Description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit.Ut suscipit condimentum molli.Aenean luctus egestas nisi, et imperdiet lorem consectetur sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "Term": "June 2022 - August 2022"
+
         }
     }
 }
