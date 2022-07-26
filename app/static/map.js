@@ -4,17 +4,17 @@
 
  function addMarkersToMap(map) {
 
-  var romeMarker = new H.map.Marker({lat:41.9, lng: 12.5});
-  map.addObject(romeMarker);
+  // var romeMarker = new H.map.Marker({lat:41.9, lng: 12.5});
+  // map.addObject(romeMarker);
 
-  var londonMarker = new H.map.Marker({lat:51.5008, lng:-0.1224});
-  map.addObject(londonMarker);
+  // var londonMarker = new H.map.Marker({lat:51.5008, lng:-0.1224});
+  // map.addObject(londonMarker);
 
-  var colimaMarker = new H.map.Marker({lat:19.243919, lng:-103.728539});
-  map.addObject(colimaMarker);
+  // var colimaMarker = new H.map.Marker({lat:19.243919, lng:-103.728539});
+  // map.addObject(colimaMarker);
 
-  var mexicoCityMarker = new H.map.Marker({lat:19.432608, lng:-99.133209});
-  map.addObject(mexicoCityMarker);
+  // var mexicoCityMarker = new H.map.Marker({lat:19.432608, lng:-99.133209});
+  // map.addObject(mexicoCityMarker);
 
   // var washingtondcMarker = new H.map.Marker({lat:38.9072, lng:-77.0369});
   // map.addObject(nycMarker);
