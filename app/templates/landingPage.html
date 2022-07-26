@@ -38,14 +38,14 @@
             <h1 class="large-white-title">Skills</h1>
         </div>
         <div class="footer-grid">
-            {% for i in data['Skills'] %}
-            <div class="white-text">
-                <p>{{ i }}</p>
-                {% print(i) %}
-                <h1>{{data[i]['Title']}}</h1>
-                <p>{{data[i]['Description']}}</p>
-            </div>
-            {% endfor %}
+            <h1>{{data['Skills'][0]['Title']}}</h1>
+            <p>{{data['Skills'][0]['Description']}}</p>
+
+            <h1>{{data['Skills'][1]['Title']}}</h1>
+            <p>{{data['Skills'][1]['Description']}}</p>
+
+            <h1>{{data['Skills'][2]['Title']}}</h1>
+            <p>{{data['Skills'][2]['Description']}}</p>
         </div>
     </div>
 
