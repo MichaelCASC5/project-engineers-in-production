@@ -41,7 +41,8 @@
             {% for i in range(3) %}
             <div class="white-text">
                 <p>{{ i }}</p>
-                <h1>{{data['Skills']['{{ i }}']['Title']}}</h1>
+                {% print(i) %}
+                <h1>{{data['Skills'][i]['Title']}}</h1>
                 <p>{{data['Description']}}</p>
             </div>
             {% endfor %}
