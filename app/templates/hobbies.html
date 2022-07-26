@@ -53,16 +53,32 @@
     </div>
 
     <div class="image-grid-area">
-        {% for i in range(2) %}
         <div class="image-grid">
-            {% for i in range(3) %}
-                <p class="small-title">Title</p>
-                <img src="{{images['travel']}}"/>
-                <a href="https://www.youtube.com/" target="_blank"> See More</a>
-                <p>{{conclusion['Text']}}</p>
-            {% endfor %}
+            <img src="{{images['jwst']}}"/>
+            <a href="https://www.youtube.com/" target="_blank"> See More</a>
+            <p>{{data['BottomText']}}</p>
+
+            <img src="{{images['radium_utahTeapot']}}"/>
+            <a href="https://www.youtube.com/" target="_blank"> See More</a>
+            <p>{{data['BottomText']}}</p>
+
+            <img src="{{images['pc_setup']}}"/>
+            <a href="https://www.youtube.com/" target="_blank"> See More</a>
+            <p>{{data['BottomText']}}</p>
         </div>
-        {% endfor %}
+        <div class="image-grid">
+            <img src="{{images['r2-d2']}}"/>
+            <a href="https://www.youtube.com/" target="_blank"> See More</a>
+            <p>{{data['BottomText']}}</p>
+
+            <img src="{{images['patrick_and_gary']}}"/>
+            <a href="https://www.youtube.com/" target="_blank"> See More</a>
+            <p>{{data['BottomText']}}</p>
+
+            <img src="{{images['RoyalGameOfUr_1']}}"/>
+            <a href="https://www.youtube.com/" target="_blank"> See More</a>
+            <p>{{data['BottomText']}}</p>
+        </div>
     </div>
  
 {%endblock%}
