@@ -117,19 +117,19 @@ def timeline():
         info = footer["FooterInformation"],
     )
 
-@app.route('/projects')
-def hobbies():
-    datahobbies = hobbiesJson
-    footer = footerJson
-    return render_template(
-        'projects.html',
-        images = images,
-        data = datahobbies,
-        hobbies = datahobbies["Hobbies"],
-        map_hobbies = datahobbies["Map"],
-        conclusion = datahobbies["Conclusion"],
-        info = footer["FooterInformation"],
-    )
+# @app.route('/projects')
+# def hobbies():
+#     datahobbies = hobbiesJson
+#     footer = footerJson
+#     return render_template(
+#         'projects.html',
+#         images = images,
+#         data = datahobbies,
+#         hobbies = datahobbies["Hobbies"],
+#         map_hobbies = datahobbies["Map"],
+#         conclusion = datahobbies["Conclusion"],
+#         info = footer["FooterInformation"],
+#     )
 
 # @app.route('/timeline')
 # def timeline():
