@@ -21,6 +21,25 @@
             "Description":"Descripion #3: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut suscipit condimentum molli.Aenean luctus egestas nisi, et imperdiet lorem consectetur sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
         }
     },
+    "Map":{
+        "0":{
+            "Picture":"/static/img/hobby1.jpg",
+            "Title": "Hobby 1 Title",
+            "Description":"Descripion MAP #1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut suscipit condimentum molli.Aenean luctus egestas nisi, et imperdiet lorem consectetur sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+        },
+
+        "1":{
+            "Picture":"/static/img/hobby2.jpg",
+            "Title": "Hobby 2 Title",
+            "Description":"Descripion #2: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut suscipit condimentum molli.Aenean luctus egestas nisi, et imperdiet lorem consectetur sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+
+        "2":{
+            "Picture":"/static/img/hobby3.jpg",
+            "Title": "Hobby 3 Title",
+            "Description":"Descripion #3: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut suscipit condimentum molli.Aenean luctus egestas nisi, et imperdiet lorem consectetur sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        }
+    },
     "Conclusion":{
         "Title":"My 3D Artwork",
         "Text":"Here are examples of my work in 3D, which I've been developing my skills in for about 10 years."

@@ -97,6 +97,7 @@ def hobbies():
         images = images,
         data = datahobbies,
         hobbies = datahobbies["Hobbies"],
+        map_hobbies = datahobbies["Map"],
         conclusion = datahobbies["Conclusion"],
         info = footer["FooterInformation"],
     )
