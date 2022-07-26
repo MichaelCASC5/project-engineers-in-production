@@ -38,14 +38,16 @@
             <h1 class="large-white-title">Skills</h1>
         </div>
         <div class="footer-grid">
-            <h1>{{data['Skills']['0']['Title']}}</h1>
-            <p>{{data['Skills']['0']['Description']}}</p>
+            <div class="white-text">
+                <h1>{{data['Skills']['0']['Title']}}</h1>
+                <p>{{data['Skills']['0']['Description']}}</p>
 
-            <h1>{{data['Skills']['1']['Title']}}</h'1'>
-            <p>{{data['Skills']['1']['Description']}}</p>
+                <h1>{{data['Skills']['1']['Title']}}</h'1'>
+                <p>{{data['Skills']['1']['Description']}}</p>
 
-            <h1>{{data['Skills']['2']['Title']}}</h1>
-            <p>{{data['Skills']['2']['Description']}}</p>
+                <h1>{{data['Skills']['2']['Title']}}</h1>
+                <p>{{data['Skills']['2']['Description']}}</p>
+            </div>
         </div>
     </div>
 
@@ -58,15 +60,32 @@
     </div>
 
     <div class="image-grid-area">
-        {% for i in range(2) %}
         <div class="image-grid">
-            {% for i in range(3) %}
-                <img src="{{images['desk']}}"/>
-                <a href="https://www.youtube.com/" target="_blank"> See More</a>
-                <p>{{data['BottomText']}}</p>
-            {% endfor %}
+            <img src="{{images['jwst']}}"/>
+            <a href="https://www.youtube.com/" target="_blank"> See More</a>
+            <p>{{data['BottomText']}}</p>
+
+            <img src="{{images['radium_utahTeapot']}}"/>
+            <a href="https://www.youtube.com/" target="_blank"> See More</a>
+            <p>{{data['BottomText']}}</p>
+
+            <img src="{{images['pc_setup']}}"/>
+            <a href="https://www.youtube.com/" target="_blank"> See More</a>
+            <p>{{data['BottomText']}}</p>
         </div>
-        {% endfor %}
+        <div class="image-grid">
+            <img src="{{images['r2-d2']}}"/>
+            <a href="https://www.youtube.com/" target="_blank"> See More</a>
+            <p>{{data['BottomText']}}</p>
+
+            <img src="{{images['patrick_and_gary']}}"/>
+            <a href="https://www.youtube.com/" target="_blank"> See More</a>
+            <p>{{data['BottomText']}}</p>
+
+            <img src="{{images['RoyalGameOfUr_1']}}"/>
+            <a href="https://www.youtube.com/" target="_blank"> See More</a>
+            <p>{{data['BottomText']}}</p>
+        </div>
     </div>
 
 {% endblock %}

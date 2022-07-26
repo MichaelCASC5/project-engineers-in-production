@@ -38,7 +38,13 @@ images = {
     "logo": "/static/img/logo.svg",
     "profilePic" : "/static/img/logo.jpg",
     "desk" : "/static/img/desk_background.jpg",
-    "travel" : "/static/img/travel.jpeg"
+    "travel" : "/static/img/travel.jpeg",
+    "jwst" : "/static/img/jwst.png",
+    "patrick_and_gary" : "/static/img/patrick_and_gary.png",
+    "pc_setup" : "/static/img/pc_setup.png",
+    "r2-d2" : "/static/img/r2-d2.png",
+    "RoyalGameOfUr_1" : "/static/img/RoyalGameOfUr_1.png",
+    "radium_utahTeapot" : "/static/img/radium_utahTeapot.png",
 }
 
 #fixing warning:  Enable tracemalloc to get the object allocation traceback
