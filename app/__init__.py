@@ -37,7 +37,7 @@ mydb.create_tables([TimelinePost])
 images = {
     "logo": "/static/img/logo.svg",
     "profilePic" : "/static/img/logo.jpg",
-    "desk" : "/static/img/desk_background_blue.jpg",
+    "desk" : "/static/img/desk_background.jpg",
     "travel" : "/static/img/travel.jpeg",
     "jwst" : "/static/img/jwst.png",
     "patrick_and_gary" : "/static/img/patrick_and_gary.png",
