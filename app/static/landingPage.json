@@ -1,10 +1,24 @@
 {
-    "Name": "John Johnson",
-    "Subtitle": "A short subtitle about what I do.",
-    "Age" : "21",
-    "Description": "123 Lorem ipsum dolor sit amet, consectetur adipiscing elit.Ut suscipit condimentum molli.Aenean luctus egestas nisi, et imperdiet lorem consectetur sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit. 123 Lorem ipsum dolor sit amet, consectetur adipiscing elit.Ut suscipit condimentum molli.Aenean luctus egestas nisi, et imperdiet lorem consectetur sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "Quote": "Inspirational Text",
-    "Pitch": "A short phrase to give a general idea of what this page, and what this fellow, is about.",
-    "Conclusion": "My Communities",
-    "BottomText": "Ut suscipit condimentum molli. Aenean luctus egestas nisi, et imperdiet lorem consectetur sed."
+    "Name": "Michael Calle",
+    "Subtitle": "Programmer. 3D Artist. Musician. Writer. Creator.\\ntest",
+    "Age" : "19",
+    "Description": "When I was small, I discovered my urge to want to build and create, but I always found myself limited in terms of physical resources and ability. In middle school, once I discovered computer science and programming, I gained the ability to create virtually anything, only limited by what I could learn myself. Since then, I've found myself coding and building programs in as much freetime as I could afford; I grew an an incessant urge to expand my technological ability in this endless fire to continue to work to build greater and greater things. \\n\\n At the moment, I'm a computer science major at Hunter College. It was about halfway through high school did I realize that computer science wasn't something I could just do for myself, to build things just for myself, but I could build things for people. I could help build the future. After moving on from AP Computer Science, and after investing many summers and winters in coding-related intensives and extracirriculars, I chose my major for the reason that I'd be able to continue doing computer science far into the future.",
+    "Quote": "A Creative Techie",
+    "Pitch": "I'm passionate about technology, and I'm always working on some new project to push myself and grow my skills.",
+    "Conclusion": "Things I've Made",
+    "BottomText": "",
+    "Skills":{
+        "0":{
+            "Title":"Title0",
+            "Description":"Description0"
+        },
+        "1":{
+            "Title":"Title1",
+            "Description":"Description1"
+        },
+        "2":{
+            "Title":"Title2",
+            "Description":"Description2"
+        }
+    }
 }

@@ -35,13 +35,13 @@
 
     <div class="map-background">
         <div>
-            <h1 class="large-white-title">My Mission</h1>
+            <h1 class="large-white-title">Skills</h1>
         </div>
         <div class="footer-grid">
             {% for i in range(3) %}
             <div class="white-text">
-                <h1>Title</h1>
-                <p>{{data['Description']}}</p>
+                <h1>{{data[i]['Title']}}</h1>
+                <p>{{data[i]['Description']}}</p>
             </div>
             {% endfor %}
         </div>
