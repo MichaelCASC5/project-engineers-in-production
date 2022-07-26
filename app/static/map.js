@@ -16,6 +16,9 @@
   // var mexicoCityMarker = new H.map.Marker({lat:19.432608, lng:-99.133209});
   // map.addObject(mexicoCityMarker);
 
+  var washingtondcMarker = new H.map.Marker({lat:38.9072, lng:-77.0369});
+  map.addObject(nycMarker);
+
   var nycMarker = new H.map.Marker({lat:40.712776, lng:-74.005974});
   map.addObject(nycMarker);
 

@@ -45,6 +45,7 @@ images = {
     "r2-d2" : "/static/img/r2-d2.png",
     "RoyalGameOfUr_1" : "/static/img/RoyalGameOfUr_1.png",
     "radium_utahTeapot" : "/static/img/radium_utahTeapot.png",
+    "sling" : "/static/img/sling.jpg"
 }
 
 #fixing warning:  Enable tracemalloc to get the object allocation traceback
