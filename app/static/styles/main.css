@@ -426,8 +426,7 @@ body {
     border-radius: 0;
     background-clip: padding-box;
 
-    padding-top: 18;
-    padding-bottom: 35px;
+    padding: 35px;
     margin: auto;
 
     min-width: 1000px;
