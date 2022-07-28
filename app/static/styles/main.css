@@ -424,4 +424,8 @@ body {
     -moz-background-clip: padding;
     border-radius: 0;
     background-clip: padding-box;
+
+    padding: 35px;
+    margin-left: 200px;
+    margin-right: 200px;
 }
