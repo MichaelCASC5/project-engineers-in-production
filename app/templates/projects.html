@@ -1,6 +1,37 @@
 {% extends "index.html" %}
 {% block content %}
-    <div>
-        test
+<div class="center-title">
+    <h1 class="large-title">GAMES AND SIMULATIONS</h1>
+    <div class="text">
+        <p>Here are some programs I've made that you can download. You can also visit the source code if you would like.</p>
     </div>
+    <br>
+</div>
+
+<div class="image-grid-area">
+    <div class="image-grid">
+        <img src="{{images['ai_racers']}}"/>
+        <a href="https://www.instagram.com/p/CgLOdNTrD1d/" target="_blank"> See More</a>
+        <p>Machine Learning - Self Correcting Driving Application</p>
+
+        <img src="{{images['keysandlocks']}}"/>
+        <a href="https://www.instagram.com/p/CeMO3qMLPGM/" target="_blank"> See More</a>
+        <p>HS Senior Year Computer Science Project - First 3D Software</p>
+
+        <img src="{{images['space_sim']}}"/>
+        <a href="https://www.instagram.com/p/CSiO40pL6oh/" target="_blank"> See More</a>
+        <p>Unity 3D - Simple Spaceflight Simulator</p>
+    </div>
+</div>
+
+<div class="row section topspace">
+    <div class="panel panel-cta"><div class="panel-body">
+        <div class="col-lg-8">
+            <p><b>CASTLE QUEST!</b> Navigate an infinite haunted castle while fighting off progressively more difficult monsters. You craft everything you carry.</p>
+        </div>
+        <div class="col-lg-4 text-right">
+            <a href="CASTLE QUEST.zip" class="btn btn-primary btn-lg">Download Here</a>
+        </div>
+    </div></div>
+</div>
 {%endblock%}

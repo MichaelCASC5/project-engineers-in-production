@@ -49,7 +49,10 @@ images = {
     "sheetmusic" : "/static/img/sheetmusic.png",
     "ai_racers2" : "/static/img/ai_racers2.png",
     "vbot2" : "/static/img/vbot2.png",
-    "diceleaffin" : "/static/img/diceleaffin.png"
+    "diceleaffin" : "/static/img/diceleaffin.png",
+    "ai_racers" : "/static/img/ai_racers.png",
+    "keysandlocks" : "/static/img/keysandlocks.png",
+    "space_sim" : "/static/img/space_sim.png"
 }
 
 #fixing warning:  Enable tracemalloc to get the object allocation traceback
