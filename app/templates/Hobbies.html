@@ -1,0 +1,84 @@
+{% extends "index.html" %}
+{% block content %}
+    <div class="narrow-banner">
+        <h1 class="type-text">{{data['LargeTitle']}}</h1>
+    </div>
+
+    <div class="center-title">
+        <h1 class="large-title">{{data['Quote']}}</h1>
+        <div class="text">
+            <p>{{data['Pitch']}}</p>
+        </div>
+    </div>
+
+    {%for hobby in hobbies%}
+        {% if loop.index is divisibleby 2 %}
+            <div class="gridrow-reverse">
+        {% else %}
+            <div class="gridrow">
+        {% endif %}
+            <div class="profile">
+                <div id="profile-picture" class="profile-picture">
+                    <img src="{{hobbies[hobby]['Picture']}}"/>
+                </div>
+            </div>
+            
+            <div class="column-center">
+                <div class="title">{{hobbies[hobby]['Title']}}</div>
+                <div class="text">
+                    <p>{{hobbies[hobby]['Description']}}</p>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+    
+    <div class="map-background">
+        <div class="map-banner">
+            <div class="text">
+                <h1 class="map-title">My Travels</h1>
+                {%for hobby in map_hobbies%}
+                <p>{{map_hobbies[hobby]['Description']}}</p>
+                {% endfor %}
+            </div>
+            <div id="map"></div>
+        </div>
+    </div>
+
+    <div class="center-title">
+        <h1 class="large-title">{{conclusion['Title']}}</h1>
+        <div class="text">
+            <p>{{conclusion['Text']}}</p>
+        </div>
+        <br>
+    </div>
+
+    <div class="image-grid-area">
+        <div class="image-grid">
+            <img src="{{images['jwst']}}"/>
+            <a href="https://www.instagram.com/p/CgLOdNTrD1d/" target="_blank"> See More</a>
+            <p>The James Web Space Telescope</p>
+
+            <img src="{{images['diceleaffin']}}"/>
+            <a href="https://www.instagram.com/p/CeMO3qMLPGM/" target="_blank"> See More</a>
+            <p>Dice of Life</p>
+
+            <img src="{{images['pc_setup']}}"/>
+            <a href="https://www.instagram.com/p/CSiO40pL6oh/" target="_blank"> See More</a>
+            <p>A setup of dreams</p>
+        </div>
+        <div class="image-grid">
+            <img src="{{images['r2-d2']}}"/>
+            <a href="https://www.instagram.com/p/CSakSKBrVQg/" target="_blank"> See More</a>
+            <p>R2-D2 on a hot day on Tatooine</p>
+
+            <img src="{{images['patrick_and_gary']}}"/>
+            <a href="https://www.instagram.com/p/CSfxIB8LN1S/" target="_blank"> See More</a>
+            <p>Patrick and Gary</p>
+
+            <img src="{{images['RoyalGameOfUr_1']}}"/>
+            <a href="https://www.instagram.com/p/CXkWgbTL_76/" target="_blank"> See More</a>
+            <p>The oldest playable board game in history</p>
+        </div>
+    </div>
+
+{%endblock%}

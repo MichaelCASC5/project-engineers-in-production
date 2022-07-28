@@ -1,0 +1,50 @@
+{% extends "index.html" %}
+{% block content %}
+
+<div class="narrow-banner">
+    <h1 class="type-text">My Timeline</h1>
+</div>
+
+<div class="center-title">
+    <h1 class="large-title">Timeline Title</h1>
+    <div class="text">
+        <p>Enter your information to post an event to the timeline!</p>
+    </div>
+</div>
+
+<form id="form">
+    <label for="name_input">Enter Name:</label>
+    <input name="name" type="text">
+    <br>
+
+    <label for="email_input">Enter email:</label>
+    <input name="email" type="email">
+    <br>
+   
+    <label for="content_input">Enter content:</label>
+    <input name="content" type="content">
+    <br>
+
+    <button type="submit">Post</button>
+    <br>
+
+    <div id="posts-section">
+        Test
+    </div>
+
+    {% for i in range(3) %}
+    <div class="column-center">
+        <div class="title">POST TITLE</div>
+        <div class="text">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
+    </div>
+    {% endfor %}
+</form>
+
+{%endblock%}

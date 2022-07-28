@@ -1,0 +1,47 @@
+{
+    "LargeTitle":"My Hobbies",
+    "Quote": "Passion for Pastimes",
+    "Pitch": "Outside of work and school, I still like to challenge myself and learn new information and skills!",
+    "Hobbies":{
+        "0":{
+            "Picture":"/static/img/hobby1.jpg",
+            "Title": "A Calligraphic Scribe",
+            "Description": "Calligraphy is a more recent addition to my list of hobbies, but it remains on theme with what I love to do in my freetime. Doing calligraphy allows me to explore what is probably the most important or significant human invention for the last 6000 years of recorded history: writing. After all, without scribes history would not have begun. It's a skill that requires pracice and dedication to improve, and it gives me another way to connect to our past human ancestors."
+        },
+
+        "1":{
+            "Picture":"/static/img/sling.jpg",
+            "Title": "A Slinger Of Stones",
+            "Description": "Sometimes, I end up telling someone that I like to weave. They usually ask me, \"What do you weave?\" The suprise on their faces when I tell them I weave weapons! The sling is the most ancient and one of the more influential tools of humanity. It was likely mankind's first true projectile weapon, helping us to leave the stone age. And on those ancient battlefields much later, whistling lead sling stones would fall upon you in greater numbers than even arrows and spears."
+        },
+
+        "2":{
+            "Picture":"/static/img/sheetmusic.png",
+            "Title": "A Musician",
+            "Description": "Music has always been with us as a species. I'm currently working on my musical composition skills, and taking great inspiration from giants such as Mozart, Beethoven, and Haydn, I plan to eventually finish my first symphony. My only goal is to write at least one memorable and great thing."
+        }
+    },
+    "Map":{
+        "0":{
+            "Picture":"/static/img/hobby1.jpg",
+            "Title": "New York City",
+            "Description":"I been in New York City for my entire life."
+        },
+
+        "1":{
+            "Picture":"/static/img/hobby2.jpg",
+            "Title": "Washington DC",
+            "Description":"I have also visited Washington DC."
+        },
+
+        "2":{
+            "Picture":"/static/img/hobby3.jpg",
+            "Title": "Long Island",
+            "Description":"I literally just live in Long Island."
+        }
+    },
+    "Conclusion":{
+        "Title":"My 3D Artwork",
+        "Text":"Here are examples of my work in 3D, which I've been developing my skills in for about 10 years."
+    }
+}

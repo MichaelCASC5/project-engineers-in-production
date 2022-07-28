@@ -1,0 +1,21 @@
+{
+    "FooterInformation":{
+        "0":{
+            "Title": "Contact",
+            "Description": "Descripion #1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut suscipit condimentum molli.Aenean luctus egestas nisi, et imperdiet lorem consectetur sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "PhoneNumber": "1-631-402-7416",
+            "Email": "michaelcalle14@gmail.com",
+            "Location": "City University of New York, Hunter College, New York City, New York "
+        },
+
+        "1":{
+            "Title": "Information",
+            "Description": "I'm confident I have the experience and the skills to succeed in an internship working alongside professionals. At any point just send me an email if you'd like to contact me! I would be honored if I've piqued your curiosity."
+        },
+
+        "2":{
+            "Title": "Social Media",
+            "Description": "You can find me here at my social media. You'll be able to see the projects I've worked on and am working on, and gain of sense of my abilities!"
+        }
+    }
+}
