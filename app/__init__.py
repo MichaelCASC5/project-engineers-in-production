@@ -48,7 +48,8 @@ images = {
     "sling" : "/static/img/sling.jpg",
     "sheetmusic" : "/static/img/sheetmusic.png",
     "ai_racers2" : "/static/img/ai_racers2.png",
-    "vbot2" : "/static/img/vbot2.png"
+    "vbot2" : "/static/img/vbot2.png",
+    "diceleaffin" : "/static/img/diceleaffin.png"
 }
 
 #fixing warning:  Enable tracemalloc to get the object allocation traceback
