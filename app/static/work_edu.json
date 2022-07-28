@@ -10,35 +10,49 @@
         "1":{
             "Logo": "/static/img/Work_Education/ripplematch.png",
             "Company": "RippleMatch",
-            "Position": "Production Engineering Fellow",
-            "Description":"The MLH Fellowship is a 12-week internship alternative for aspiring technologists. Fellows on the Production Engineering track experience what it's like to work in Production / Site Reliability Engineering and DevOps.",
-            "Term": "June 2022 - August 2022"
+            "Position": "Leadership Development Intern",
+            "Description":"Selected from a pool of thousands of candidates to work closely with leaders of RippleMatch’s Leadership Team",
+            "Term": "October 2021 - December 2021"
         }
     },
 
     "Education":{
         "0":{
-            "Logo": "/static/img/Work_Education/Job1.jpeg",
-            "School": "Major League Hacking",
-            "Title": "Production Engineering Fellow",
-            "Description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit.Ut suscipit condimentum molli.Aenean luctus egestas nisi, et imperdiet lorem consectetur sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "Term": "June 2022 - August 2022"
-
+            "Logo": "/static/img/Work_Education/beam.png",
+            "School": "City University of New York - Hunter College",
+            "Title": "Computer Science Major",
+            "Description":"Pursuing a degree in Computer Science.",
+            "Term": "Fall 2020 - Spring 2024"
+        },
+        
+        "1":{
+            "Logo": "/static/img/Work_Education/beam.png",
+            "School": "Bridge to Enter Advanced Mathematics",
+            "Title": "Student",
+            "Description":"Three week overnight stay at Bard College to study mathematics at a high level.",
+            "Term": "Summer 2015 - Ongoing"
+        },
+        
+        "2":{
+            "Logo": "/static/img/Work_Education/beam.png",
+            "School": "AllStarCode at Goldman Sachs",
+            "Title": "Student",
+            "Description":"Six week summer intensive in web development",
+            "Term": "Summer 2018"
         },
 
-        "1":{
-            "Logo": "/static/img/Work_Education/Edu1.jpeg",
-            "School": "Instituto Tecnológico de Monterrey",
-            "Title": "BS in Robotics and Digital Systems",
-            "Description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit.Ut suscipit condimentum molli.Aenean luctus egestas nisi, et imperdiet lorem consectetur sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "Term": "August 2020 - June 2024 (expected)"
-
+        "3":{
+            "Logo": "/static/img/Work_Education/beam.png",
+            "School": "Yleana Leadership Foundation",
+            "Title": "Student",
+            "Description":"Three weeks at Colgate University learning entrepreneurship.",
+            "Term": "Summer 2019"
         }
     },
 
     "Skills":{
-        "Programming languages": ["C++","C","Python","Verilog"],
+        "Programming languages": ["C++","C","Python","Verilog","HTML","CSS","Javascript","Java"],
         "Soft skills": ["Communication","Leadership"],
-        "Other": ["Robotics", "Linux"]
+        "Other": ["Robotics", "Linux", "Git", "3D Graphics"]
     }
 }
