@@ -60,15 +60,19 @@
     </div>
 
     <div class="image-grid-area">
-        {% for i in range(2) %}
         <div class="image-grid">
-            {% for i in range(3) %}
-                <img src="{{images['desk']}}"/>
-                <a href="https://www.youtube.com/" target="_blank"> See More</a>
-                <p>{{data['BottomText']}}</p>
-            {% endfor %}
+            <img src="{{images['ai_racers2']}}"/>
+            <a href="https://www.youtube.com/" target="_blank"> See More</a>
+            <p>Machine Learning - Navigating a User-Drawn Course</p>
+
+            <img src="{{images['radium_utahTeapot']}}"/>
+            <a href="https://github.com/MichaelCASC5/3DGraphics" target="_blank"> See More</a>
+            <p>3D Graphics - Java Built 3D Graphics Framework Software</p>
+
+            <img src="{{images['vbot2']}}"/>
+            <a href="https://github.com/MichaelCASC5/3DGraphics" target="_blank"> See More</a>
+            <p>Machine Learning - English Language Recognition</p>
         </div>
-        {% endfor %}
     </div>
 
 {% endblock %}
