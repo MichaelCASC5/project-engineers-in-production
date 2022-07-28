@@ -101,7 +101,7 @@ def hobbies():
     datahobbies = hobbiesJson
     footer = footerJson
     return render_template(
-        'hobbies.html',
+        'Hobbies.html',
         images = images,
         data = datahobbies,
         hobbies = datahobbies["Hobbies"],

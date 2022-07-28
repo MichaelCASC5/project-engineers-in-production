@@ -15,12 +15,24 @@ form.addEventListener('submit', function (e) {
     form.reset()
 })
 
-fetch('http://127.0.0.1:5000/api/timeline_post').then(res => res.json()).then(data => {
+fetch('/api/timeline_post').then(res => res.json()).then(data => {
     console.log("Here is the data print:")
     console.log(data.timeline_posts.length)
+    var output = ""
     for(let i=0;i<data.timeline_posts.length;i++){
-        document.body.onload = addElement(data.timeline_posts[i])
+        // document.body.onload = addElement(data.timeline_posts[i])
+        console.log(data.timeline_posts[i])
+        console.log("hello")
+
+        output += data.timeline_posts[i].created_at + "\n" + data.timeline_posts[i].name + "\n" +  data.timeline_posts[i].email + "\n" + data.timeline_posts[i].content + "\n" + "\n"
+
+        // document.getElementById("posts-section").innerHTML = data.timeline_posts[i].content
+        // document.body.onload = addElement(data.timeline_posts[i].name)
     }
+    
+    console.log("output:")
+    console.log(output)
+    // document.getElementById("posts-section").innerHTML = output
 }).catch(error => console.log("ERROR"))
 
 function addElement(data){
