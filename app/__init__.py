@@ -52,7 +52,8 @@ images = {
     "diceleaffin" : "/static/img/diceleaffin.png",
     "ai_racers" : "/static/img/ai_racers.png",
     "keysandlocks" : "/static/img/keysandlocks.png",
-    "space_sim" : "/static/img/space_sim.png"
+    "space_sim" : "/static/img/space_sim.png",
+    "calligraphy" : "/static/img/calligraphy.png"
 }
 
 #fixing warning:  Enable tracemalloc to get the object allocation traceback

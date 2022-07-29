@@ -4,7 +4,7 @@
     "Pitch": "Outside of work and school, I still like to challenge myself and learn new information and skills!",
     "Hobbies":{
         "0":{
-            "Picture":"/static/img/hobby1.jpg",
+            "Picture":"/static/img/calligraphy.png",
             "Title": "A Calligraphic Scribe",
             "Description": "Calligraphy is a more recent addition to my list of hobbies, but it remains on theme with what I love to do in my freetime. Doing calligraphy allows me to explore what is probably the most important or significant human invention for the last 6000 years of recorded history: writing. After all, without scribes history would not have begun. It's a skill that requires pracice and dedication to improve, and it gives me another way to connect to our past human ancestors."
         },
@@ -25,19 +25,19 @@
         "0":{
             "Picture":"/static/img/hobby1.jpg",
             "Title": "New York City",
-            "Description":"I been in New York City for my entire life."
+            "Description":"New York, often called New York City (NYC) to distinguish it from the State of New York, is the most populous city in the United States. With a 2020 population of 8,804,190 distributed over 300.46 square miles (778.2 km2), New York City is also the most densely populated major city in the United States."
         },
 
         "1":{
             "Picture":"/static/img/hobby2.jpg",
             "Title": "Washington DC",
-            "Description":"I have also visited Washington DC."
+            "Description":""
         },
 
         "2":{
             "Picture":"/static/img/hobby3.jpg",
-            "Title": "Long Island",
-            "Description":"I literally just live in Long Island."
+            "Title": "Washington DC",
+            "Description":"Washington, D.C., formally the District of Columbia, also known as just Washington or simply D.C., is the capital city and federal district of the United States.[9] It is located on the east bank of the Potomac River, which forms its southwestern and southern border with the U.S. state of Virginia, and it shares a land border with the U.S. state of Maryland on its remaining sides."
         }
     },
     "Conclusion":{

@@ -1,7 +1,7 @@
 {
     "Work experience":{
         "0":{
-            "Logo": "/static/img/Work_Education/Job1.jpeg",
+            "Logo": "/static/img/Work_Education/Job1.png",
             "Company": "Major League Hacking",
             "Position": "Production Engineering Fellow",
             "Description":"The MLH Fellowship is a 12-week internship alternative for aspiring technologists. Fellows on the Production Engineering track experience what it's like to work in Production / Site Reliability Engineering and DevOps.",
@@ -18,7 +18,7 @@
 
     "Education":{
         "0":{
-            "Logo": "/static/img/Work_Education/beam.png",
+            "Logo": "/static/img/Work_Education/hunter.png",
             "School": "City University of New York - Hunter College",
             "Title": "Computer Science Major",
             "Description":"Pursuing a degree in Computer Science.",
@@ -34,7 +34,7 @@
         },
         
         "2":{
-            "Logo": "/static/img/Work_Education/beam.png",
+            "Logo": "/static/img/Work_Education/asc.png",
             "School": "AllStarCode at Goldman Sachs",
             "Title": "Student",
             "Description":"Six week summer intensive in web development",
@@ -42,7 +42,7 @@
         },
 
         "3":{
-            "Logo": "/static/img/Work_Education/beam.png",
+            "Logo": "/static/img/Work_Education/yleana.png",
             "School": "Yleana Leadership Foundation",
             "Title": "Student",
             "Description":"Three weeks at Colgate University learning entrepreneurship.",
@@ -53,6 +53,6 @@
     "Skills":{
         "Programming languages": ["C++","C","Python","Verilog","HTML","CSS","Javascript","Java"],
         "Soft skills": ["Communication","Leadership"],
-        "Other": ["Robotics", "Linux", "Git", "3D Graphics"]
+        "Other": ["Robotics", "3D Graphics", "Linux", "Git"]
     }
 }
